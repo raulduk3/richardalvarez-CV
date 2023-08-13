@@ -6,6 +6,5 @@ Please find attached my [resume](https://www.raulduke.com/Richard_Alvarez_Resume
 
 ## Author
 
-👤 **Richard Álvarez**
-
+**Richard Álvarez**
 * GitHub: [@raulduk3](https://github.com/raulduk3)
