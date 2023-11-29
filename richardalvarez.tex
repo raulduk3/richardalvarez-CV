@@ -20,8 +20,13 @@
 \usepackage{tabularx}
 \usepackage{hyphenat}
 \usepackage{fontawesome5}
-\input{glyphtounicode}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+\fi
 
+\usepackage{fontspec}
+\setmainfont{AvenirNextLTPro} % Replace with your .otf font file name
 
 %---------- FONT OPTIONS ----------
 % sans-serif
@@ -60,7 +65,6 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
 
 %-------------------------
 % Custom commands
@@ -70,7 +74,6 @@
     {#1 \vspace{-2pt}}
   }
 }
-
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
@@ -124,9 +127,16 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+\newcommand{\resumeParagraph}[1]{
+  \item[]
+  \parbox{\linewidth}{
+    \small{#1}
+  }
+  \vspace{-7pt}
+}
+
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \begin{document}
 
@@ -166,12 +176,14 @@
             \resumeItem{\textbf{Extracurriculars:} {Horn Gallery Videographer}}
         \resumeItemListEnd
     
-    
-    \resumeSubheading
-      {Walter Payton College Preparatory 
-      % \normalfont{(Admission rate: 0.85\%)}
-      }{Chicago, Illinois}
-      {High School Diploma}{Sep 2016 \textbf{--} Jun 2020}
+    %% Older
+	\iffalse
+		\resumeSubheading
+		  {Walter Payton College Preparatory 
+		  % \normalfont{(Admission rate: 0.85\%)}
+		  }{Chicago, Illinois}
+		  {High School Diploma}{Sep 2016 \textbf{--} Jun 2020}
+     \fi
     
   \resumeSubHeadingListEnd
 
@@ -183,33 +195,30 @@
   \vspace{3pt}
   \resumeSubHeadingListStart
   
+  	\resumeSubheading
+  {Library and Information Services (LBIS), Kenyon College}{Gambier, Ohio}
+  {IT Assistant}{Sep 2023 - Present}
+      \resumeParagraph{Support faculty and staff with technology needs, including equipment preparation and delivery, and office technology moves. securely erasing and recycling outdated equipment, managing public printer support, and updating inventory records. Additionally, I conduct classroom checks and initial troubleshooting, under the guidance of Classroom Support and TSS roles.}
+      
+      \vspace{4pt}
+      
     \resumeSubheading
-      {Sommerlad Construction}{Chicago, Illinois, United States}
-      {General Contractor}{June 2023 - August 2023}
-        \resumeItemListStart
-            \resumeItem{Utilized physical prowess on a daily basis for the demolition of buildings, playing a key role in the preparation for reconstruction.}
-            \resumeItem{Assisted in various stages of the remodeling process, contributing to both design and implementation with a focus on efficiency and safety.}
-            \resumeItem{Collaborated with construction teams and supervisors, aligning efforts to meet project deadlines and maintain compliance with industry standards.}
-        \resumeItemListEnd
+      {Sommerlad Construction}{Chicago, Illinois}
+      {General Contractor}{June 2023 - Aug 2023}
+		\resumeParagraph{Spearheaded demolition for reconstruction projects, enhanced remodeling designs and execution, and coordinated team efforts to adhere to deadlines and safety standards.}
 
     \resumeSubheading
-      {Private Stock Studios}{Chicago, Illinois, United States}
+      {Private Stock Studios}{Chicago, Illinois}
       {Production Assistant}{Apr 2020 \textbf{--} Aug 2020}
-        \resumeItemListStart
-	            \resumeItem{Assisted with both film and music production tasks, ensuring smooth operations during recording sessions and shoots.}
-\resumeItem{Assisted coordination with studio engineers, directors, and artists to align production schedules and meet project timelines.}
-\resumeItem{Maintained a meticulous record of studio sessions, ensuring that all production details, notes, and changes were documented for future.}
-        \resumeItemListEnd
-        
-\resumeSubheading
-   {Intercultural Montessori}{Chicago, IL, United States}
-   {Teacher's Aid}{Apr 2019 \textbf{--} March 2020}
-     \resumeItemListStart
-        \resumeItem{Helped assist with tutoring and monitoring student's activity for two to three hours daily after school, and taught kids how to program on web apps (e.g., Code.org, Scratch, etc.).}
-        \resumeItem{Served as everyday support and assistance to the teacher.}
-        \resumeItem{Remained flexible, adaptable, and punctual.}
-        \resumeItem{Brought forth excellent written and verbal communication skills.}
-     \resumeItemListEnd
+      \resumeParagraph{Streamlined film and music production processes, orchestrated schedules with studio professionals, and meticulously documented production details.}
+
+% Older
+\iffalse        
+	\resumeSubheading
+	   {Intercultural Montessori}{Chicago, Illinois}
+	   {Teacher's Aid}{Apr 2019 \textbf{--} March 2020}
+	 	\resumeParagraph{Tutored students, facilitated programming learning, provided teacher support, and ensured effective communication and punctuality.}
+ \fi
 
   \resumeSubHeadingListEnd
 
@@ -222,13 +231,13 @@
   \resumeSubHeadingListStart
   
     \resumeSubheading
-      {HSCHK}{Chicago, Illinois, United States}
+      {HSCHK}{Chicago, Illinois}
       {Research Assistant}{Aug 2018 \textbf{--} Nov 2019}
         \resumeItemListStart
 \resumeItem{Joined research conducted by Bernard Dickens III at the University of Chicago aimed at pioneering preventative measures against supply-chain attacks and ensuring file integrity via file checksums.}
-\resumeItem{Played a key role in the design and implementation of a novel web browser extension, HSCHK, which automates file checksum verification over DNS.}
-\resumeItem{Effectively communicated, both in writing and verbally, the design philosophy and technical aspects of HSCHK to stakeholders and team members.}
-\resumeItem{Demonstrated a strong ability to learn independently, quickly adapting to new concepts and technologies, while also showcasing proficiency in collaborative research and development.}
+\resumeItem{Played a key role in the implementation of web browser extension for HSCHk.}
+        \resumeItem{Communicated technical details of HSCHK to team and stakeholders.}
+        \resumeItem{Quickly adapted to new technologies and worked collaboratively.}
         \resumeItemListEnd
     
     
@@ -254,23 +263,21 @@
     \vspace{3pt}
     \resumeSubHeadingListStart
       
-      \resumeProjectHeading
-        {\textbf{Unsupervised Deep Learning and PySceneDetect Analysis of Creative Strategies} $|$ \emph{\href{https://github.com/raulduk3/pySceneDetect-video-editing-trends}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/22/}{\color{blue}Digital Kenyon}}}{}
-	 \resumeItemListStart
-			\resumeItem{Developed a comprehensive analysis of short-format video editing trends by employing PySceneDetect for feature extraction and Deep Neural Networks (DNNs) for unsupervised clustering of videos, yielding insights into innovative editing techniques and creative decisions.}
-			\resumeItem{Utilized advanced visualization methods such as t-SNE and PCA to interpret clustering results, allowing the discovery of underlying patterns and correlations in modern video production and content creation strategies.}
-	\resumeItemListEnd
-	
-	\resumeProjectHeading
-        {\textbf{AI-Driven Kubrick-Inspired Film Script Generation} $|$ \emph{\href{https://github.com/raulduk3/kubrick-gen}{\color{blue}GitHub}}}{}
-         \resumeItemListStart
-			\resumeItem{Leveraged Chain of Thought prompting methods and few-shot learning techniques to craft a machine learning pipeline for generating film scripts and content. By extracting the stylistic nuances of Stanley Kubrick's work, the system was able to produce creative and thematically consistent scripts, expanding the capabilities of AI in the cinematic field.}
-			\resumeItem{Utilized Dust.tt to design an API that interacts with Large Language Models, generating scripts, titles, synopses, and character lists. }
+       \resumeProjectHeading
+    {\textbf{Unsupervised Deep Learning and PySceneDetect Analysis of Creative Strategies} $|$ \emph{\href{https://github.com/raulduk3/pySceneDetect-video-editing-trends}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/22/}{\color{blue}Digital Kenyon}}}{}
+      \resumeItemListStart
+        \resumeItem{Analyzed short-format video editing trends using PySceneDetect and DNNs.}
+        \resumeItem{Employed t-SNE and PCA for data visualization and pattern discovery.}
+      \resumeItemListEnd
 
-          \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{AI-Driven Kubrick-Inspired Film Script Generation} $|$ \emph{\href{https://github.com/raulduk3/kubrick-gen}{\color{blue}GitHub}}}{}
+      \resumeItemListStart
+        \resumeItem{Created an AI pipeline for generating film scripts inspired by Stanley Kubrick's style.}
+        \resumeItem{Designed an API using Dust.tt for script generation with Large Language Models.}
+      \resumeItemListEnd
 
 
- 
       % \resumeProjectHeading
         % {\textbf{Rocket Flight Simulator} $|$ \emph{\href{https://github.com/arasgungore/rocket-flight-simulator}{\color{blue}GitHub}}}{}
           % \resumeItemListStart
@@ -297,8 +304,8 @@
     \small{\item{
         \textbf{Programming:}{ C, C++, Python, JavaScript/Node, Rust, SQL, MySQL, PHP} \\ \vspace{3pt}
         
-		\textbf{Technologies:}{ Git, Docker, DNNs (Deep Neural Networks), NLP (Sentiment Analysis, Topic
-Modeling), OpenCV, Linux, LaTeX } \\ \vspace{3pt}
+		\textbf{Technologies:}{ Docker, DNNs (Deep Neural Networks), NLP (Sentiment Analysis, Topic
+Modeling), OpenCV, Linux,  } \\ \vspace{3pt}
        
 		\textbf{Frameworks}{ Next.js, React, Tailwind, Scikit-Learn, Keras} \\ \vspace{3pt}
         
@@ -358,10 +365,8 @@ Modeling), OpenCV, Linux, LaTeX } \\ \vspace{3pt}
     % \small{\item{Swimming, Fitness, Eight-ball}}
   % \resumeSubHeadingListEnd
 
-
-
 %----------- REFERENCES -----------
-
+\iffalse
 \section{References}
   \vspace{2pt}
   \resumeSubHeadingListStart
@@ -371,6 +376,7 @@ Modeling), OpenCV, Linux, LaTeX } \\ \vspace{3pt}
         \textbf{Joann Rinella}{ Intercultural Montessori \textbf{Phone:} 312.799.9997 }
     }}
   \resumeSubHeadingListEnd
+\fi
 
 %-------------------------------------------
 \end{document}
