@@ -69,6 +69,8 @@
 %-------------------------
 % Custom commands
 
+\newcommand{\xsmall}{\fontsize{8pt}{8pt}\selectfont}
+
 \newcommand{\resumeItem}[1]{
 \item\small{
 {#1 \vspace{-2pt}}
@@ -156,13 +158,18 @@ $|$
 $|$
 \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/Chicago,+IL/@41.833871,-87.8967704,11z/data=!3m1!4b1!4m6!3m5!1s0x880e2c3cd0f4cbed:0xafe0a6ad09c0c000!8m2!3d41.8781136!4d-87.6297982!16zL20vMDFfZDQ?entry=ttu}{Chicago, Illinois}
 \end{center}
+\section{About Me}
+\vspace{2pt}
+{My journey in computer science started with a book on C programming, a gift from my father when I wanted to build video games. The challenge of rendering a triangle on the screen ignited my passion for the field, and that passion continues to drive me today.
+I actively create experimental short films and music videos, completing over 15 projects so far. My research in large language models (LLMs) has led to two published papers. I've captained national web development competition teams and built 17 unique programming projects.
+I aim to bring a creative perspective and enthusiastic communication skills to IT and engineering teams. Outside of work, I enjoy biking, visiting local theaters, and reading a new book every month.}
 
-
+\vspace{-6pt}
 
 %----------- EDUCATION -----------
 
 \section{Education}
-\vspace{3pt}
+\vspace{2pt}
 \resumeSubHeadingListStart
 
 \resumeEducationHeading
@@ -187,40 +194,36 @@ $|$
 
 \resumeSubHeadingListEnd
 
-
-
 %----------- WORK EXPERIENCE -----------
 
 \section{Work Experience}
-\vspace{3pt}
+\vspace{2pt}
 \resumeSubHeadingListStart
 
 \resumeSubheading
 {Library and Information Services (LBIS), Kenyon College}{Gambier, Ohio}
 {IT Assistant}{Sep 2023 - Feb 2024}
-\resumeParagraph{Support faculty and staff with technology needs, including equipment preparation and delivery, office technology moves, securely erasing and recycling outdated equipment, managing public printer support, and updating inventory records. Additionally, I conduct classroom checks and initial troubleshooting, under the guidance of Classroom Support and TSS roles.}
+\resumeParagraph{At Kenyon College, I supported campus-wide technology needs by preparing workstations, moving office tech, and securely erasing and recycling equipment. I restocked printers daily. I conducted classroom checks under the guidance of team members.  I streamlined team projects by applying programming skills, in one instance by automatically creating a spreadsheet of course meetings and classroom locations to determine when our techs could perform maintenance.}
 
 \vspace{2pt}
 
+\resumeSubheading
+{HSCHK}{Chicago, Illinois}
+{Research Assistant}{Aug 2018 \textbf{--} Nov 2019}
+\resumeParagraph{At the University of Chicago, I worked under Bernard Dickens III on strategies to protect against supply-chain attacks and ensure file integrity using advanced checksum technologies. I attended monthly  code reviews and contributed 27 commits to the repository. This role taught me professionalism and collaboration in cybersecurity.}
+
+% Older
+\iffalse        
+\resumeSubheading
 \resumeSubheading
 {Sommerlad Construction}{Chicago, Illinois}
 {General Contractor}{June 2023 - Aug 2023}
 \resumeParagraph{Spearheaded demolition for reconstruction projects, enhanced remodeling designs and execution, and coordinated team efforts to adhere to deadlines and safety standards.}
 
-\vspace{-2.8pt}
-
-\resumeSubheading
 {Private Stock Studios}{Chicago, Illinois}
 {Production Assistant}{Apr 2020 \textbf{--} Aug 2020}
 \resumeParagraph{Streamlined film and music production processes, orchestrated schedules with studio professionals, and meticulously documented production details.}
 
-\resumeSubheading
-{HSCHK}{Chicago, Illinois}
-{Research Assistant}{Aug 2018 \textbf{--} Nov 2019}
-\resumeParagraph{Worked under the guidance of Bernard Dickens III at the University of Chicago, focusing on pioneering strategies to protect against supply-chain attacks and ensure file integrity through advanced checksum technologies. My role was instrumental in developing a browser extension for HSCHK. This experience honed my ability to quickly adapt to new technologies and underscored the importance of collaborative work in the field of cybersecurity.}
-
-% Older
-\iffalse        
 \resumeSubheading
 {Intercultural Montessori}{Chicago, Illinois}
 {Teacher's Aid}{Apr 2019 \textbf{--} March 2020}
@@ -239,8 +242,6 @@ $|$
 
 %  \resumeSubHeadingListEnd
 
-
-
 %----------- AWARDS & ACHIEVEMENTS -----------
 
 %\section{Awards \& Achievements}
@@ -252,22 +253,21 @@ $|$
 %    }}
 %  \resumeSubHeadingListEnd\textsl{•}
 
-
 %----------- PROJECTS -----------
 
 \section{Publications}
-\vspace{3pt}
+\vspace{2pt}
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{A Retrieval-Augmented Film Recommendation System} $|$ \emph{\href{https://github.com/raulduk3/language-model-driven-film-recommendation}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/34/}{\color{blue}Digital Kenyon}}}{}
+{\textbf{A Retrieval-Augmented Film Recommendation System} $|$ \emph{\href{https://github.com/raulduk3/language-model-driven-film-recommendation}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/34/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 2024}}{}
 \resumeItemListStart
-\resumeItem{Developed a Retrieval-Augmented Film Recommendation System using Node.js, integrating OMDb and TMDb APIs to enhance movie metadata for precise and personalized recommendations.}
 \resumeItem{Utilized LangChain’s OpenAI integration for dynamic query generation based on user preferences, demonstrating the potential for advanced AI and machine learning techniques in digital entertainment.}
+\resumeItem{Developed a Retrieval-Augmented Film Recommendation System using Node.js, integrating OMDb and TMDb APIs to enhance movie metadata for precise and personalized recommendations.}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Unsupervised Deep Learning and PySceneDetect Analysis of Creative Strategies} $|$ \emph{\href{https://github.com/raulduk3/pySceneDetect-video-editing-trends}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/22/}{\color{blue}Digital Kenyon}}}{}
+{\textbf{Unsupervised Deep Learning and PySceneDetect Analysis} $|$ \emph{\href{https://github.com/raulduk3/pySceneDetect-video-editing-trends}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/22/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 2023}}{}
 \resumeItemListStart
 \resumeItem{Analyzed short-format video editing trends using PySceneDetect and DNNs.}
 \resumeItem{Employed t-SNE and PCA for data visualization and pattern discovery.}
@@ -294,18 +294,18 @@ $|$
 \resumeSubHeadingListStart
 \small{\item{
 \textbf{Languages:}{ English (Native), Spanish (Intermediate)}
-
-\textbf{Programming:}{ C, C++, Python, JavaScript/Node, Rust, SQL, MySQL, PHP} \\ \vspace{3pt}
+\\ \vspace{2pt}
+\textbf{Programming:}{ C, C++, Python, JavaScript/Node, Rust, SQL, MySQL, PHP} \\ \vspace{2pt}
 
 \textbf{Technologies:}{ Docker, DNNs (Deep Neural Networks), NLP (Sentiment Analysis, Topic
-Modeling), OpenCV, Linux } \\ \vspace{3pt}
+Modeling), OpenCV, Linux } \\ \vspace{2pt}
 
-\textbf{Frameworks}{ Next.js, React, Tailwind, Scikit-Learn, Keras} \\ \vspace{3pt}
+\textbf{Frameworks}{ Next.js, React, Tailwind, Scikit-Learn, Keras} \\ \vspace{2pt}
 
 % \textbf{Developer Tools}{: X, X, X} \\
 % \textbf{Libraries}{: X, X, X} \\
 
-\textbf{Applications}{: Davinci Resolve, Adobe Suite, Cinema4D } \vspace{3pt}
+\textbf{Applications}{: Davinci Resolve, Adobe Suite, Cinema4D } \vspace{2pt}
 }}
 \resumeSubHeadingListEnd
 
@@ -362,9 +362,8 @@ Modeling), OpenCV, Linux } \\ \vspace{3pt}
 \vspace{2pt}
 \resumeSubHeadingListStart
 \small{\item{
-\textbf{Bernard Dickens III}{ Ergodark LLC, BDPA Mentor \textbf{Email:} \href{mailto:me@bernarddickens.com}{me@bernarddickens.com}} \\ \vspace{3pt}
-\textbf{Audra Anderson}{ BDPA Mentor \textbf{Email:} \href{mailto:ajatechpro@gmail.com}{ajatechpro@gmail.com}} \\ \vspace{3pt}
-\textbf{Steve Krajenski}{ Intercultural Montessori \textbf{Phone:} 312.799.9997 }
+\textbf{Bernard Dickens III}{ Ergodark LLC, Mentor \textbf{Email:} \href{mailto:me@bernarddickens.com}{me@bernarddickens.com}} \\ \vspace{3pt}
+\textbf{Steve Krajenski}{ LBIS Kenyon College \textbf{Phone:} 312.799.9997 }
 }}
 \resumeSubHeadingListEnd
 \fi
