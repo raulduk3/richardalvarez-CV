@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.8.13)  24 JUL 2024 13:34
+This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.8.13)  24 JUL 2024 14:02
  restricted system commands enabled.
 **richardalvarez.tex
 (./richardalvarez.tex
@@ -595,23 +595,28 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 [1
 
 {/usr/local/texlive/2023basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./richardalvarez.aux)
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 4.08003pt, for example:
+(fancyhdr)                \setlength{\footskip}{4.08003pt}.
+
+[2] (./richardalvarez.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `richardalvarez.out' has not changed.
-(rerunfilecheck)             Checksum: 88FDFF2B62BDE0DBE76A9686FB932033;471.
+(rerunfilecheck)             Checksum: 1E2FC11E778897E7188645B8DEA63DA0;564.
 )
 
 Here is how much of LuaTeX's memory you used:
- 16711 strings out of 478285
+ 16715 strings out of 478285
  125007,1977958 words of node,token memory allocated
  460 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 6 attribute, 58 glue_spec,
  4 attribute_list, 1 write nodes
-   avail lists: 2:1648,3:582,4:208,5:459,6:123,7:13397,8:2,9:854,10:17,11:1028
- 36403 multiletter control sequences out of 65536+600000
- 66 fonts using 4604655 bytes
+   avail lists: 2:1677,3:586,4:211,5:470,6:124,7:13421,8:2,9:863,10:17,11:1030
+ 36405 multiletter control sequences out of 65536+600000
+ 66 fonts using 4604975 bytes
  72i,11n,79p,609b,1120s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </System/Library/Fonts/Avenir.ttc></usr/local/texlive/2023basic/texmf-dist/fonts
 /opentype/public/fontawesome5/FontAwesome5Brands-Regular-400.otf></System/Librar
@@ -620,10 +625,10 @@ c/fontawesome5/FontAwesome5Free-Solid-900.otf></System/Library/Fonts/Avenir.ttc>
 </usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6
 .pfb>
-Output written on richardalvarez.pdf (1 page, 77725 bytes).
+Output written on richardalvarez.pdf (2 pages, 79648 bytes).
 
-PDF statistics: 87 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 131072)
- 41 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 99 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 131072)
+ 49 words of extra memory for PDF output out of 10000 (max. 100000000)
 
