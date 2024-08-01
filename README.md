@@ -8,3 +8,4 @@ Please find attached my [resume](https://www.raulduke.com/Richard_Alvarez_Resume
 
 **Richard Álvarez**
 * GitHub: [@raulduk3](https://github.com/raulduk3)
+* LinkedIn: [@richardalvarez-](https://www.linkedin.com/in/richardalvarez-/)

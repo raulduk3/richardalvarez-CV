@@ -21,9 +21,12 @@
 \usepackage{hyphenat}
 \usepackage{fontawesome5}
 \usepackage{iftex}
-
 \usepackage{fontspec}
+\usepackage{xspace} 
+
 \setmainfont{Avenir}
+
+\frenchspacing 
 
 %---------- FONT OPTIONS ----------
 % sans-serif
@@ -34,14 +37,7 @@
 
 % serif
 % \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+% \usepackage{charter} 
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -49,6 +45,12 @@
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
 \urlstyle{same}
 
@@ -58,7 +60,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-\vspace{-4pt}\scshape\raggedright\large
+	\vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -70,52 +72,61 @@
 \newcommand{\normal}{\fontsize{16pt}{16pt}\selectfont}
 
 \newcommand{\resumeItem}[1]{
-\item\small{
-{#1 \vspace{-2pt}}
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
 }
+
+% Footer
+\fancypagestyle{firstpage}{
+  \fancyhf{} % clear all header and footer fields
 }
+
+\fancypagestyle{otherpages}{
+  \fancyhf{} % clear all header and footer fields
+  \fancyfoot[C]{\small Richard Álvarez | 2024}
+}
+
+\pagestyle{otherpages}
+\thispagestyle{firstpage}
 
 \newcommand{\resumeSubheading}[4]{
-\vspace{-2pt}\item
-\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-\textbf{#1} & #2 \\
-\textit{\small#3} & \textit{\small #4} \\
-\end{tabular*}\vspace{-7pt}
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
 }
-
 
 \newcommand{\resumeSubSubheading}[2]{
-\vspace{-2pt}\item
-\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-\textit{\small#1} & \textit{\small #2} \\
-\end{tabular*}\vspace{-7pt}
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
 }
-
 
 \newcommand{\resumeEducationHeading}[6]{
-\vspace{-2pt}\item
-\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-\textbf{#1} & #2 \\
-\textit{\small#3} & \textit{\small #4} \\
-\textit{\small#5} & \textit{\small #6} \\
-\end{tabular*}\vspace{-5pt}
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+		\textit{\small#5} & \textit{\small #6} \\
+	\end{tabular*}\vspace{-5pt}
 }
-
 
 \newcommand{\resumeProjectHeading}[2]{
-\vspace{-2pt}\item
-\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-\small#1 & #2 \\
-\end{tabular*}\vspace{-7pt}
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & #2 \\
+	\end{tabular*}\vspace{-7pt}
 }
 
-
 \newcommand{\resumeOrganizationHeading}[4]{
-\vspace{-2pt}\item
-\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-\textbf{#1} & \textit{\small #2} \\
-\textit{\small#3}
-\end{tabular*}\vspace{-7pt}
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & \textit{\small #2} \\
+		\textit{\small#3}
+	\end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -128,11 +139,11 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \newcommand{\resumeParagraph}[1]{
-\item[]
-\parbox{\linewidth}{
-\small{#1}
-}
-\vspace{-7pt}
+	\item[]
+	\parbox{\linewidth}{
+		\small{#1\xspace} % Modify this line
+	}
+	\vspace{-7pt}
 }
 
 %-------------------------------------------
@@ -143,25 +154,27 @@
 %---------- HEADING ----------
 
 \begin{center}
-\textbf{\normal \scshape Richard Álvarez} \\ \vspace{3pt}
-\vspace{12pt}
-\small
-\faMobile \hspace{.5pt} \href{tel:7734699726}{+1 773 469 9726}
-$|$
-\faAt \hspace{.5pt} \href{mailto:rawalvarez731@gmail.com}{rawalvarez731@gmail.com}
-$|$
-\faGithub \hspace{.5pt} \href{https://github.com/raulduk3}{GitHub}
-$|$
-\faGlobe \hspace{.5pt} \href{https://raulduke.com}{raulduke.com}
-$|$
-\faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/Chicago,+IL/@41.833871,-87.8967704,11z/data=!3m1!4b1!4m6!3m5!1s0x880e2c3cd0f4cbed:0xafe0a6ad09c0c000!8m2!3d41.8781136!4d-87.6297982!16zL20vMDFfZDQ?entry=ttu}{Chicago, Illinois}
+	\textbf{\normal \scshape Richard Álvarez} \\ \vspace{3pt}
+	\vspace{12pt}
+	\small
+	\faMobile \hspace{.5pt} \href{tel:7734699726}{+1 773 469 9726}
+	$|$
+	\faAt \hspace{.5pt} \href{mailto:rawalvarez731@gmail.com}{rawalvarez731@gmail.com}
+	$|$
+	\faGithub \hspace{.5pt} \href{https://github.com/raulduk3}{GitHub}
+	$|$
+	\faGlobe \hspace{.5pt} \href{https://raulduke.com}{raulduke.com}
+	$|$
+	\faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/Chicago,+IL/@41.833871,-87.8967704,11z/data=!3m1!4b1!4m6!3m5!1s0x880e2c3cd0f4cbed:0xafe0a6ad09c0c000!8m2!3d41.8781136!4d-87.6297982!16zL20vMDFfZDQ?entry=ttu}{Chicago, Illinois}
 \end{center}
+
+%----------- ABOUT ME  -----------
 
 \section{About Me}
 \vspace{2pt}
 \resumeSubHeadingListStart
 
-\resumeParagraph{I am a seasoned programmer with 17 unique open-source projects and two published papers on large language models.  My research interests include VFX, computer rendering, DevOps, cybersecurity, and machine learning. My academic background in Film has equipped me with a creative approach to problem-solving and project management. I have the technical skills to create professional video content, develop high-level plans, and execute group projects efficiently. Outside my professional pursuits, I enjoy reading, visiting local theaters, and cycling.}
+\resumeParagraph{I am a seasoned programmer with a passion for VFX, computer graphics, and machine learning. I have created 17 unique open-source projects and published two papers on large language models. My Film degree has honed my creative problem-solving and project management skills. I excel in developing professional video content and organizing group projects. I also enjoy reading, listening to music, visiting local theaters, and cycling.}
 \vspace{2pt}
 
 \resumeSubHeadingListEnd
@@ -175,19 +188,17 @@ $|$
 \resumeSubHeadingListStart
 
 \resumeEducationHeading
-{Kenyon College
-% \normalfont{(Admission rate: 0.09\%)}
-}{Gambier, Ohio}
+{Kenyon College}{Gambier, Ohio}
 {Bachelor of Arts in Film}{Aug 2020 - May 2024}
-{Minor in History and Concentration in Integrated Program in Humane Studies} {}
+{Minor in History and Concentration in Integrated Program in Humane Studies}{}
 \vspace{-1pt}
 \resumeItemListStart
 \resumeItem{\textbf{Relevant coursework:} {Senior Research Seminar, AI for the Humanities, Software Development, Programming Humanity, Data Structures \& Program Design, Introduction to Programming}}
 \resumeItem{\textbf{Extracurriculars:} {Horn Gallery Videographer, Club Basketball, KSJP}}
-
 \resumeItemListEnd
 
-%% Older
+%----------- Archived  -----------
+
 \iffalse
 \resumeSubheading
 {Walter Payton College Preparatory 
@@ -216,29 +227,28 @@ $|$
 {General Contractor}{Jun 2023 - Aug 2023}
 \resumeParagraph{I participated in demolition projects for remodeling efforts, performed general land management tasks such as lawn mowing and simple assembly, and supported the team in meeting deadlines and adhering to safety standards.}
 
-
 \resumeSubheading
 {HSCHK, University of Chicago}{Chicago, Illinois}
 {Research Assistant}{Aug 2018 - Nov 2019}
-\resumeParagraph{I worked under Bernard Dickens III on an academic paper proposing strategies to protect against supply-chain attacks and ensure file integrity using advanced checksum technologies. I attended monthly  code reviews and contributed 27 commits to the repository. This role taught me professionalism and collaboration in cybersecurity.}
+\resumeParagraph{I worked under Bernard Dickens III on an academic paper proposing strategies to protect against supply-chain attacks and ensure file integrity using advanced checksum technologies. I attended monthly code reviews and contributed 27 commits to the repository. This role taught me professionalism and collaboration in cybersecurity.}
 
-% Older
-\iffalse        
+%———– Archived  ———–
 
+\iffalse
 \resumeSubheading
 {Private Stock Studios}{Chicago, Illinois}
-{Production Assistant}{Apr 2020 \textbf{--} Aug 2020}
+{Production Assistant}{Apr 2020 \textbf{–} Aug 2020}
 \resumeParagraph{Streamlined film and music production processes, orchestrated schedules with studio professionals, and meticulously documented production details.}
 
 \resumeSubheading
 {Intercultural Montessori}{Chicago, Illinois}
-{Teacher's Aid}{Apr 2019 \textbf{--} March 2020}
+{Teacher’s Aid}{Apr 2019 \textbf{–} March 2020}
 \resumeParagraph{Tutored students, facilitated programming learning, provided teacher support, and ensured effective communication and punctuality.}
 \fi
 
 \resumeSubHeadingListEnd
 
-%----------- RESEARCH EXPERIENCE -----------
+%———– RESEARCH EXPERIENCE ———–
 
 %\section{Research Experience}
 %  \vspace{3pt}
@@ -246,18 +256,18 @@ $|$
 
 %  \resumeSubHeadingListEnd
 
-%----------- AWARDS & ACHIEVEMENTS -----------
+%———– AWARDS & ACHIEVEMENTS ———–
 
-%\section{Awards \& Achievements}
+%\section{Awards & Achievements}
 %  \vspace{2pt}
 %  \resumeSubHeadingListStart
 %    \small{\item{
-%   		\textbf{High Honors Degree:}{ Awarded to Bachelor alumni who have graduated with a GPA greater than or equal to 3.50 by Boğaziçi University.} \\ \vspace{3pt}
-%				
+%   		\textbf{High Honors Degree:}{ Awarded to Bachelor alumni who have graduated with a GPA greater than or equal to 3.50 by Boğaziçi University.} \ \vspace{3pt}
+%
 %    }}
 %  \resumeSubHeadingListEnd\textsl{•}
 
-%----------- PROJECTS -----------
+%———– PUBLICATIONS ———–
 
 \section{Publications}
 \vspace{2pt}
@@ -277,12 +287,13 @@ $|$
 \resumeItem{Employed t-SNE and PCA for data visualization and pattern discovery.}
 \resumeItemListEnd
 
+%———– Archived  ———–
 
 \iffalse
 \resumeProjectHeading
 {\textbf{AI-Driven Kubrick-Inspired Film Script Generation} $|$ \emph{\href{https://github.com/raulduk3/kubrick-gen}{\color{blue}GitHub}}}{}
 \resumeItemListStart
-\resumeItem{Created an AI pipeline for generating film scripts inspired by Stanley Kubrick's style.}
+\resumeItem{Created an AI pipeline for generating film scripts inspired by Stanley Kubrick’s style.}
 \resumeItem{Designed an API using Dust.tt for script generation with Large Language Models.}
 \resumeItemListEnd
 
@@ -292,90 +303,89 @@ $|$
 \resumeItem{Analyzed short-format video editing trends using PySceneDetect and DNNs.}
 \resumeItem{Employed t-SNE and PCA for data visualization and pattern discovery.}
 \resumeItemListEnd
-
 \fi
-
 
 \resumeSubHeadingListEnd
 
-%----------- SKILLS -----------
+%———– SKILLS ———–
 
 \section{Skills}
 \vspace{2pt}
 \resumeSubHeadingListStart
 \small{\item{
-
-\textbf{Languages:}{ English (Native), Spanish (Intermediate)}
+\textbf{Languages:}{ English (Native), Spanish (Intermediate)} \\ \vspace{2pt}
 
 \textbf{Programming:}{ Python, JavaScript/Node, SQL, PHP, C, C++, Rust} \\ \vspace{2pt}
 
 \textbf{Technologies:}{ Docker, DNNs (Deep Neural Networks), NLP (Sentiment Analysis, Topic
 Modeling), OpenCV, Linux } \\ \vspace{2pt}
 
-\textbf{Frameworks}{ Next.js, React, Tailwind, Scikit-Learn, Keras} \\ \vspace{2pt}
+\textbf{Frameworks:}{ Next.js, React, Tailwind, Scikit-Learn, Keras} \\ \vspace{2pt}
 
 % \textbf{Developer Tools}{: X, X, X} \\
 % \textbf{Libraries}{: X, X, X} \\
 
-\textbf{Applications}{: Davinci Resolve, Adobe Suite, Cinema4D } \vspace{2pt}
+\textbf{Applications:}{ Davinci Resolve, Adobe Suite, Cinema4D } \vspace{2pt}
 }}
 \resumeSubHeadingListEnd
 
-%----------- RELEVANT COURSEWORK -----------
-
-% \section{Relevant Coursework}
-% \vspace{2pt}
-% \resumeSubHeadingListStart
-% \small{\item{
-% \textbf{Major coursework:}{ Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering, Pattern Recognition, Introduction to Digital Signal Processing, Introduction to Digital Communications, Introduction to Database Systems, Introduction to Image Processing, Machine Vision} \\ \vspace{3pt}
-
-% \textbf{Minor coursework:}{ Discrete Computational Structures, Introduction to Object-Oriented Programming, Data Structures and Algorithms, Computer Organization, Fundamentals of Software Engineering}
-% }}
-% \resumeSubHeadingListEnd
-
-
-
-%----------- CERTIFICATES -----------
+%———– CERTIFICATES ———–
 
 % \section{Certificates}
 % \resumeSubHeadingListStart
 
 % \resumeOrganizationHeading
-% {Procter \& Gamble VIA Certificate Program}{Feb 2022}{Business Skills, Data and Digital Skills, Project Management and Personal Productivity}
+% {Procter & Gamble VIA Certificate Program}{Feb 2022}{Business Skills, Data and Digital Skills, Project Management and Personal Productivity}
 
 % \resumeSubHeadingListEnd
 
-
-
-%----------- ORGANIZATIONS -----------
+%———– ORGANIZATIONS ———–
 
 % \section{Organizations}
 % \resumeSubHeadingListStart
 
 % \resumeOrganizationHeading
-% {Institute of Electrical and Electronics Engineers (IEEE)}{Feb 2022 -- Present}{Student Member}
+% {Institute of Electrical and Electronics Engineers (IEEE)}{Feb 2022 – Present}{Student Member}
 
 % \resumeSubHeadingListEnd
 
-%----------- HOBBIES -----------
+%———– HOBBIES ———–
 
 % \section{Hobbies}
 % \resumeSubHeadingListStart
 % \small{\item{Swimming, Fitness, Eight-ball}}
 % \resumeSubHeadingListEnd
 
-%----------- REFERENCES -----------
-\section{References}
-\vspace{2pt}
-\resumeSubHeadingListStart
-\small{\item{
-\textbf{Bernard Dickens III}{ Ergodark LLC \textbf{Email:} \href{mailto:me@bernarddickens.com}{me@bernarddickens.com}} \\ \vspace{3pt}
-\textbf{Steve Krajenski}{ LBIS Kenyon College \textbf{Phone:} (740) 504-0328 \textbf{Email:} \href{mailto:krajenski1@kenyon.edu}{krajenski1@kenyon.edu} }
-\\
-\vspace{3pt}
-\textbf{Jon Chun}{ Visiting Instructor at Kenyon College \textbf{Email:} \href{mailto:chunj@kenyon.edu}{chunj@kenyon.edu} }
-}}
-\resumeSubHeadingListEnd
+%———– REFERENCES ———–
+% \section{References}
+% \vspace{2pt}
+% \resumeSubHeadingListStart
+% \vspace{2pt}
+% \item{
+% \textbf{Bernard Dickens III} \
+% { Ergodark LLC \
+% \href{mailto:me@bernarddickens.com}{me@bernarddickens.com}} \ }
 
-%-------------------------------------------
+% \item{
+% \textbf{Steve Krajenski} \
+% { LBIS Kenyon College \
+% \href{mailto:krajenski1@kenyon.edu}{krajenski1@kenyon.edu}} \
+% (740) 504-0328
+% }
+
+% \item{
+% \textbf{Audra Anderson} \
+% { BDPA Mentor \
+% \href{mailto:ajagwwtravels@gmail.com}{ajagwwtravels@gmail.com}} \
+% }
+
+% \item{
+% \textbf{Jon Chun} \
+% { Visiting Instructor at Kenyon College \
+% \href{mailto:chunj@kenyon.edu}{chunj@kenyon.edu}} \
+% }
+
+% \resumeSubHeadingListEnd
+
+%—————————————––
 \end{document}
