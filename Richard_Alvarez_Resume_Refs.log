@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.8.1)  1 AUG 2024 18:26
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.8.1)  9 AUG 2024 12:50
  restricted system commands enabled.
 **Richard_Alvarez_Resume_Refs.tex
 (./Richard_Alvarez_Resume_Refs.tex
@@ -683,8 +683,8 @@ Here is how much of LuaTeX's memory you used:
  460 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 6 attribute, 58 glue_spec,
  4 attribute_list, 1 write nodes
-   avail lists: 1:2,2:1707,3:592,4:214,5:449,6:124,7:12994,8:2,9:858,10:20,11:99
-2
+   avail lists: 1:2,2:1707,3:592,4:214,5:449,6:124,7:12986,8:2,9:858,10:20,11:99
+1
  38675 multiletter control sequences out of 65536+600000
  65 fonts using 4520647 bytes
  74i,12n,80p,692b,1120s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -693,7 +693,7 @@ texlive/2024/texmf-dist/fonts/opentype/public/fontawesome5/FontAwesome5Free-Soli
 d-900.otf></System/Library/Fonts/Avenir.ttc></usr/local/texlive/2024/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on Richard_Alvarez_Resume_Refs.pdf (2 pages, 78551 bytes).
+Output written on Richard_Alvarez_Resume_Refs.pdf (2 pages, 78888 bytes).
 
 PDF statistics: 91 PDF objects out of 1000 (max. 8388607)
  72 compressed objects within 1 object stream
