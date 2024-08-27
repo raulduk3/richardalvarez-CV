@@ -1,7 +1,7 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.8.1)  22 AUG 2024 18:20
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.8.1)  3 AUG 2024 17:04
  restricted system commands enabled.
-**Richard_Alvarez_Resume.tex
-(./Richard_Alvarez_Resume.tex
+**Resume.tex
+(./Resume.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 Lua module: luaotfload 2024-02-14 3.28 Lua based OpenType font support
@@ -516,9 +516,8 @@ lig;"
 tlig;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
-
-(./Richard_Alvarez_Resume.aux)
-\openout1 = Richard_Alvarez_Resume.aux
+ (./Resume.aux)
+\openout1 = Resume.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
 LaTeX Font Info:    ... okay on input line 152.
@@ -562,10 +561,10 @@ LaTeX Font Info:    ... okay on input line 152.
 \everyMPtoPDFconversion=\toks27
 )
 Package hyperref Info: Link coloring OFF on input line 152.
- (./Richard_Alvarez_Resume.out) (./Richard_Alvarez_Resume.out)
+ (./Resume.out) (./Resume.out)
 \@outlinefile=\write3
 
-\openout3 = Richard_Alvarez_Resume.out
+\openout3 = Resume.out
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
@@ -658,7 +657,7 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./Richard_Alvarez_Resume.aux)
+(./Resume.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -667,9 +666,8 @@ L3 programming layer <2024-02-20>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `Richard_Alvarez_Resume.out' has not changed.
-
-(rerunfilecheck)             Checksum: 3FB061E31E2FEFBF4DE1B637CC6BC431;525.
+Package rerunfilecheck Info: File `Resume.out' has not changed.
+(rerunfilecheck)             Checksum: 88FDFF2B62BDE0DBE76A9686FB932033;471.
 )
 
 Here is how much of LuaTeX's memory you used:
@@ -678,21 +676,21 @@ Here is how much of LuaTeX's memory you used:
  460 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 6 attribute, 58 glue_spec,
  4 attribute_list, 1 write nodes
-   avail lists: 1:2,2:1518,3:531,4:162,5:477,6:119,7:11954,8:2,9:794,10:20,11:92
-6
+   avail lists: 1:2,2:1680,3:594,4:208,5:465,6:132,7:13529,8:2,9:866,10:20,11:10
+88
  38677 multiletter control sequences out of 65536+600000
  66 fonts using 4604655 bytes
- 74i,11n,80p,687b,1120s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,11n,80p,671b,1120s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </System/Library/Fonts/Avenir.ttc></usr/local/texlive/2024/texmf-dist/fonts/open
 type/public/fontawesome5/FontAwesome5Brands-Regular-400.otf></System/Library/Fon
 ts/Avenir.ttc></usr/local/texlive/2024/texmf-dist/fonts/opentype/public/fontawes
 ome5/FontAwesome5Free-Solid-900.otf></System/Library/Fonts/Avenir.ttc></usr/loca
 l/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
 texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on Richard_Alvarez_Resume.pdf (1 page, 75378 bytes).
+Output written on Resume.pdf (1 page, 77245 bytes).
 
-PDF statistics: 83 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+PDF statistics: 87 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  7 named destinations out of 1000 (max. 131072)
  41 words of extra memory for PDF output out of 10000 (max. 100000000)
 
