@@ -141,7 +141,7 @@
 
 \newcommand{\resumeCert}[2]{
 	\small{
-	\vspace{-2pt}\item
+	\vspace{-4pt}\item
 	\textbf{#1} {\textit{\small #2}}
 	}
 }
@@ -230,27 +230,27 @@
 %----------- WORK EXPERIENCE -----------
 
 \section{Work Experience}
-\vspace{2pt}
+\vspace{4pt}
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Play-Well TEKnologies}{Chigao, Illinois}
+{Play-Well TEKnologies}{Chicago, Illinois}
 {After School STEM Instructor · Part-time}{Sep 2024}
 \resumeParagraph{}
 
 \resumeSubheading
 {Library and Information Services (LBIS), Kenyon College}{Gambier, Ohio}
-{IT Assistant}{Sep 2023 – Feb 2024}
+{IT Assistant · Part-time}{Sep 2023 – Feb 2024}
 \resumeParagraph{I supported campus-wide technology needs by preparing workstations, moving office tech, and securely erasing and recycling equipment. I restocked printers daily. I conducted classroom checks under the guidance of team members. I streamlined team projects by applying programming skills, in one instance by generating a spreadsheet of course meetings and classroom locations to determine when our techs could perform maintenance.}
 
 \resumeSubheading
 {Sommerlad Construction}{Chicago, Illinois}
-{General Contractor}{Jun 2023 – Aug 2023}
+{General Contractor · Part-time}{Jun 2023 – Aug 2023}
 \resumeParagraph{I participated in demolition projects for remodeling efforts, performed general land management tasks such as lawn mowing and simple assembly, and supported the team in meeting deadlines and adhering to safety standards.}
 
 \resumeSubheading
 {Fontanos Subs}{Chicago, Illinois}
-{Sub Artist}{May 2021 – Aug 2021}
+{Sub Artist · Part-time}{May 2021 – Aug 2021}
 \resumeParagraph{Worked behind the counter making sandwiches, maintaining cleanliness, and ensuring efficient service. Assisted with troubleshooting online orders, ensuring customer satisfaction and smooth operations.}
 
 %———– Archived  ———–
@@ -331,7 +331,7 @@
 %———– CERTIFICATES ———–
 
 \section{Certificates}
-\vspace{2pt}
+\vspace{6pt}
 \resumeSubHeadingListStart
 
 \resumeCert{CompTIA ITF+}{Sep 2024}
@@ -353,6 +353,8 @@
 
 \resumeSmallOrganizationHeading{Leadership Book Award}{Chicago, Illinois}{George Washington University}{Apr 2019}
 
+\vspace{2pt}
+
 \resumeSubHeadingListEnd
 
 %———– SKILLS ———–
@@ -363,9 +365,9 @@
 
 \textbf{Frameworks}: Next.js, React, Tailwind CSS, Scikit-Learn, Keras \\ \vspace{2pt}
 
-\textbf{Applications}: DaVinci Resolve, Adobe Creative Suite, Cinema4D \\ \vspace{2pt}
+% \textbf{Applications}: DaVinci Resolve, Adobe Creative Suite, Cinema4D \\ \vspace{2pt}
 
-\textbf{IT Support:} Setup, maintenance, troubleshooting \\ \vspace{2pt}
+% \textbf{IT Support:} Setup, maintenance, troubleshooting \\ \vspace{2pt}
 
 % \textbf{Research:} Cybersecurity, AI-driven film recommendation systems, unsupervised deep learning, video analysis \\
 
@@ -396,7 +398,7 @@
 % \resumeSubHeadingListStart
 % \vspace{2pt}
 % \item{
-% \textbf{Bernard Dickens III} \
+% \textbf{Bernard Dickens III} \1
 % { Ergodark LLC \
 % \href{mailto:me@bernarddickens.com}{me@bernarddickens.com}} \ }
 
