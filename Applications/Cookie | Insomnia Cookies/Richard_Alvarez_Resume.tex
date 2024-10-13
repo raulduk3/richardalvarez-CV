@@ -1,0 +1,253 @@
+%-------------------------
+% Resume in Latex
+% Author : Richard A. Alvarez
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome5}
+\usepackage{iftex}
+\usepackage{fontspec}
+\usepackage{xspace} 
+
+% Font configuration
+\setmainfont{Avenir}
+
+\frenchspacing 
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+
+%-------------------------
+% Custom commands
+
+\newcommand{\xsmall}{\fontsize{8pt}{8pt}\selectfont}
+\newcommand{\normal}{\fontsize{16pt}{16pt}\selectfont}
+
+\newcommand{\resumeItem}[1]{
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
+}
+
+% Footer
+\fancypagestyle{firstpage}{
+  \fancyhf{} % clear all header and footer fields
+}
+
+\fancypagestyle{otherpages}{
+  \fancyhf{} % clear all header and footer fields
+  \fancyfoot[C]{\small Richard Álvarez | 2024}
+}
+
+\pagestyle{otherpages}
+\thispagestyle{firstpage}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeEducationHeading}[6]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
+        \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeOrganizationHeading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\small #2} \\
+        \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeParagraph}[1]{
+    \item[]
+    \parbox{\linewidth}{
+        \small{#1\xspace}
+    }
+    \vspace{-7pt}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\normal \scshape Richard Álvarez} \\ \vspace{3pt}
+    \vspace{12pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:7734699726}{+1 773 469 9726}
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:rawalvarez731@gmail.com}{rawalvarez731@gmail.com}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/raulduk3}{GitHub}
+    $|$
+    \faGlobe \hspace{.5pt} \href{https://raulduke.com}{raulduke.com}
+    $|$
+    \faMapMarker \hspace{.5pt} Chicago, Illinois
+\end{center}
+
+%----------- ABOUT ME  -----------
+
+\section{About Me}
+\vspace{2pt}
+\resumeSubHeadingListStart
+
+\resumeParagraph{I am an aspiring IT professional with a passion for building community and providing excellent customer service. With years of experience working in dynamic, customer-facing environments, I excel at fostering a welcoming, safe, and educational atmosphere for customers. As a proud Latino, I aim to give back by promoting responsible cannabis use in the growing legal market.}
+
+\vspace{2pt}
+
+\resumeSubHeadingListEnd
+
+\vspace{-12pt}
+
+%----------- EDUCATION -----------
+
+\section{Education}
+\vspace{2pt}
+\resumeSubHeadingListStart
+
+\resumeEducationHeading
+{Kenyon College}{Gambier, Ohio}
+{Bachelor of Arts in Film; GPA: 3.47/4.00}{Aug 2020 – May 2024}
+{Minor in History; Concentration in Humane Studies}{}
+\vspace{-1pt}
+\resumeItemListStart
+\resumeItem{\textbf{Relevant coursework:} {AI for the Humanities, Programming Humanity, Introduction to Programming, Data Structures \& Program Design}}
+\resumeItem{\textbf{Extracurriculars:} {Horn Gallery Videographer, Club Basketball, KSJP}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------- WORK EXPERIENCE -----------
+
+\section{Work Experience}
+\vspace{2pt}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Library and Information Services (LBIS), Kenyon College}{Gambier, Ohio}
+{IT Assistant}{Sep 2023 – Feb 2024}
+\resumeParagraph{Prepared and maintained workstations across campus, ensuring technology access for students and staff. Leveraged organizational skills to manage workspaces, streamline classroom tech maintenance, and ensure equipment accuracy for campus events.}
+
+\resumeSubheading
+{Fontanos Subs}{Chicago, Illinois}
+{Customer Service Specialist}{May 2021 – Aug 2021}
+\resumeParagraph{Delivered friendly and efficient service to a wide range of customers, including assisting with complex online orders. Ensured that workstations and public-facing areas were kept clean and organized, fostering a safe and professional environment.}
+
+\resumeSubheading
+{Sommerlad Construction}{Chicago, Illinois}
+{General Laborer}{Jun 2023 – Aug 2023}
+\resumeParagraph{Participated in team efforts to complete renovation projects safely and on time, adhering to compliance standards. Assisted with demolition, general land management, and day-to-day site organization.}
+
+\resumeSubHeadingListEnd
+
+%----------- SKILLS -----------
+
+\section{Skills}
+\vspace{2pt}
+\resumeSubHeadingListStart
+\small{\item{
+\textbf{Cannabis Product Expertise:} Familiar with cannabinoids, terpenes, and various product forms (e.g., edibles, tinctures, flower) to guide customer decisions based on wellness needs. \\
+\vspace{4pt}
+
+\textbf{Compliance and Regulations:} Knowledgeable in local, state, and federal cannabis laws and safety regulations. \\
+\vspace{4pt}
+
+\textbf{Customer Service Excellence:} Skilled at building rapport with diverse customers, providing tailored product recommendations, and fostering repeat business in fast-paced retail environments. \\
+\vspace{4pt}
+
+\textbf{Retail Operations:} Adept at maintaining clean, organized workstations; restocking products; merchandising displays; and ensuring compliance with health and safety standards. \\
+\vspace{4pt}
+
+\textbf{Bilingual Communication:} Fluent in English and conversational in Spanish, enhancing customer service by assisting Spanish-speaking clients. \\
+\vspace{4pt}
+
+\textbf{Technical Skills:} Proficient in Microsoft Office (Word, Excel), email systems, and general office equipment; able to support tech operations in a retail environment.
+}}
+\resumeSubHeadingListEnd
+
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+
+\section{Awards \& Achievements}
+\vspace{2pt}
+\resumeSubHeadingListStart
+    \small{\item{
+        \textbf{George Washington University Leadership Book Award:}{ Recognized for leadership potential and excellence in academic and community engagement.} \vspace{3pt}
+    }}
+\resumeSubHeadingListEnd
+
+%———– REFERENCES ———–
+%—————————————––
+\end{document}

@@ -142,9 +142,13 @@
 \newcommand{\resumeCert}[2]{
 	\small{
 	\vspace{-2pt}\item
-	\textbf{#1} {\textit{\small #2}}
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & {\small #2} 
+	\end{tabular*}\vspace{-7pt}
 	}
 }
+
+
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
@@ -186,18 +190,13 @@
 \end{center}
 
 %----------- ABOUT ME  -----------
-
 \section{About Me}
 \vspace{2pt}
 \resumeSubHeadingListStart
 
-\resumeParagraph{I am an aspiring IT professional with a passion for VFX, computer graphics, and machine learning. I have created 17 unique open-source projects and published two papers with over 300 downloads on large language models. Pursuing a degree in Film has honed my creative problem-solving and project management skills. I excel in developing professional video content and organizing group projects. I also enjoy reading, listening to music, visiting local theaters, and cycling.}
-
-\vspace{2pt}
+\resumeItem{I am a recent graduate passionate about hands-on teaching and creative problem-solving. My past experience working with children in classroom settings has equipped me to manage class sessions, ensure the safety and engagement of students, and communicate effectively with both participants and their parents. I am seeking to contribute my knowledge of STEM and my dedication to student success by representing Play-Well in a professional and positive manner, all while maintaining the care and safekeeping of LEGO teaching materials.}
 
 \resumeSubHeadingListEnd
-
-\vspace{-12pt}
 
 %----------- EDUCATION -----------
 
@@ -235,8 +234,8 @@
 
 \resumeSubheading
 {Library and Information Services (LBIS), Kenyon College}{Gambier, Ohio}
-{IT Assistant}{Sep 2023 – Feb 2024}
-\resumeParagraph{I supported campus-wide technology needs by preparing workstations, moving office tech, and securely erasing and recycling equipment. I restocked printers daily. I conducted classroom checks under the guidance of team members. I streamlined team projects by applying programming skills, in one instance by generating a spreadsheet of course meetings and classroom locations to determine when our techs could perform maintenance.}
+{IT Assistant}{Sep 2023 - Feb 2024}
+\resumeParagraph{Worked in a team environment to support the college’s tech infrastructure. Ensured smooth classroom operations by checking setups and providing tech assistance to staff. My attention to detail and problem-solving skills helped streamline projects and deliver results under tight deadlines. Developed strong organizational skills while maintaining campus equipment and inventory.}
 
 \resumeSubheading
 {Sommerlad Construction}{Chicago, Illinois}
@@ -245,13 +244,18 @@
 
 \resumeSubheading
 {Fontanos Subs}{Chicago, Illinois}
-{Sub Artist}{May 2021 – Aug 2021}
-\resumeParagraph{Worked behind the counter making sandwiches, maintaining cleanliness, and ensuring efficient service. Assisted with troubleshooting online orders, ensuring customer satisfaction and smooth operations.}
+{Team Member / Sub Artist}{May 2021 – Aug 2021}
+\resumeParagraph{Provided fast and friendly customer service in a fast-paced food service environment. Responsible for preparing sandwiches, handling orders, and ensuring that all customers were satisfied with their experience. Worked collaboratively with a small team to maintain cleanliness and meet daily service targets.}
 
 \resumeSubheading
 {Intercultural Montessori}{Chicago, Illinois}
-{Teacher’s Aid}{Apr 2019 – Feb 2020}
-\resumeParagraph{Tutored students, facilitated programming learning, provided teacher support, and ensured effective communication and punctuality.}
+{Teacher’s Aide}{Apr 2019 – Feb 2020}
+\resumeItemListStart
+\resumeItem{Managed class sessions to ensure children were safe, engaged, and having fun.}
+\resumeItem{Communicated with parents in a respectful and knowledgeable manner to address questions and concerns.}
+\resumeItem{Worked closely with lead teachers to ensure that curriculum was tailored to diverse abilities and interests of students.}
+\resumeItem{Assisted in the safekeeping and organization of classroom materials to ensure a smooth learning environment.}
+\resumeItemListEnd
 
 %———– Archived  ———–
 \iffalse
@@ -324,7 +328,7 @@
 % \resumeSubHeadingListEnd
 
 %———– CERTIFICATES ———–
-
+\iffalse
 \section{Certificates}
 \vspace{2pt}
 \resumeSubHeadingListStart
@@ -348,22 +352,19 @@
 
 \resumeSubHeadingListEnd
 
+\fi
+
 %———– SKILLS ———–
 \section{Skills}
+\vspace{2pt}
 \resumeSubHeadingListStart
-\small{\item{
-\textbf{Programming}: Python, JavaScript/Node, SQL, PHP, C, C++, Rust \\ \vspace{2pt}
-
-\textbf{Frameworks}: Next.js, React, Tailwind CSS, Scikit-Learn, Keras \\ \vspace{2pt}
-
-\textbf{Applications}: DaVinci Resolve, Adobe Creative Suite, Cinema4D \\ \vspace{2pt}
-
-\textbf{IT Support:} Setup, maintenance, troubleshooting \\ \vspace{2pt}
-
-% \textbf{Research:} Cybersecurity, AI-driven film recommendation systems, unsupervised deep learning, video analysis \\
-
-\textbf{Languages:} English (Fluent), Spanish (Intermediate)
-}}
+\item{
+\textbf{Child Safety and Supervision:} Experience managing children in safe and engaging environments. \\ \vspace{2pt}
+\textbf{Curriculum Understanding:} Knowledgeable in adapting educational content to meet the diverse needs of students. \\ \vspace{2pt}
+\textbf{Communication:} Skilled in addressing concerns and updates with management, parents, and clients in a respectful manner. \\ \vspace{2pt}
+\textbf{Teamwork and Safety Adherence:} Strong ability to work with teams to meet operational goals while maintaining safety standards. \\ \vspace{2pt}
+\textbf{Languages:} English (Native), Spanish (Conversational)
+}
 \resumeSubHeadingListEnd
 
 %———– ORGANIZATIONS ———–
