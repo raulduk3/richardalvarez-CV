@@ -124,9 +124,26 @@
 \newcommand{\resumeOrganizationHeading}[4]{
 	\vspace{-2pt}\item
 	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-		\textbf{#1} & \textit{\small #2} \\
+		\textbf{#1} & {\small #2} \\
 		\textit{\small#3}
 	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSmallOrganizationHeading}[4]{
+	\small{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & {\small #2} \\
+		\textit{\small#3} & \textit{\small #4} 
+	\end{tabular*}\vspace{-7pt}
+	}
+}
+
+\newcommand{\resumeCert}[2]{
+	\small{
+	\vspace{-2pt}\item
+	\textbf{#1} {\textit{\small #2}}
+	}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -174,7 +191,8 @@
 \vspace{2pt}
 \resumeSubHeadingListStart
 
-\resumeParagraph{I am a seasoned programmer with a passion for VFX, computer graphics, and machine learning. I have created 17 unique open-source projects and published two papers on large language models. My Film degree has honed my creative problem-solving and project management skills. I excel in developing professional video content and organizing group projects. I also enjoy reading, listening to music, visiting local theaters, and cycling.}
+\resumeParagraph{I am an aspiring IT professional with a passion for VFX, computer graphics, and machine learning. I have created 17 unique open-source projects and published two papers with over 300 downloads on large language models. Pursuing a degree in Film has honed my creative problem-solving and project management skills. I excel in developing professional video content and organizing group projects. I also enjoy reading, listening to music, visiting local theaters, and cycling.}
+
 \vspace{2pt}
 
 \resumeSubHeadingListEnd
@@ -189,7 +207,7 @@
 
 \resumeEducationHeading
 {Kenyon College}{Gambier, Ohio}
-{Bachelor of Arts in Film}{Aug 2020 - May 2024}
+{Bachelor of Arts in Film; GPA: 3.47/4.00}{Aug 2020 – May 2024}
 {Minor in History and Concentration in Integrated Program in Humane Studies}{}
 \vspace{-1pt}
 \resumeItemListStart
@@ -216,34 +234,48 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Library and Information Services (LBIS), Kenyon College}{Gambier, Ohio}
-{IT Assistant}{Sep 2023 - Feb 2024}
-\resumeParagraph{I supported campus-wide technology needs by preparing workstations, moving office tech, and securely erasing and recycling equipment. I restocked printers daily. I demolished hard drives. I conducted classroom checks under the guidance of team members.  I streamlined team projects by applying programming skills, in one instance by generating a spreadsheet of course meetings and classroom locations to determine when our techs could perform maintenance.}
+{Play-Well TEKnologies}{Chigao, Illinois}
+{After School STEM Instructor · Part-time}{Sep 2024}
+\resumeParagraph{}
 
-\vspace{2pt}
+\resumeSubheading
+{Library and Information Services (LBIS), Kenyon College}{Gambier, Ohio}
+{IT Assistant}{Sep 2023 – Feb 2024}
+\resumeParagraph{I supported campus-wide technology needs by preparing workstations, moving office tech, and securely erasing and recycling equipment. I restocked printers daily. I conducted classroom checks under the guidance of team members. I streamlined team projects by applying programming skills, in one instance by generating a spreadsheet of course meetings and classroom locations to determine when our techs could perform maintenance.}
 
 \resumeSubheading
 {Sommerlad Construction}{Chicago, Illinois}
-{General Contractor}{Jun 2023 - Aug 2023}
+{General Contractor}{Jun 2023 – Aug 2023}
 \resumeParagraph{I participated in demolition projects for remodeling efforts, performed general land management tasks such as lawn mowing and simple assembly, and supported the team in meeting deadlines and adhering to safety standards.}
 
 \resumeSubheading
-{HSCHK, University of Chicago}{Chicago, Illinois}
-{Research Assistant}{Aug 2018 - Nov 2019}
-\resumeParagraph{I worked under Bernard Dickens III on an academic paper proposing strategies to protect against supply-chain attacks and ensure file integrity using advanced checksum technologies. I attended monthly code reviews and contributed 27 commits to the repository. This role taught me professionalism and collaboration in cybersecurity.}
+{Fontanos Subs}{Chicago, Illinois}
+{Sub Artist}{May 2021 – Aug 2021}
+\resumeParagraph{Worked behind the counter making sandwiches, maintaining cleanliness, and ensuring efficient service. Assisted with troubleshooting online orders, ensuring customer satisfaction and smooth operations.}
 
 %———– Archived  ———–
-
 \iffalse
-\resumeSubheading
-{Private Stock Studios}{Chicago, Illinois}
-{Production Assistant}{Apr 2020 \textbf{–} Aug 2020}
-\resumeParagraph{Streamlined film and music production processes, orchestrated schedules with studio professionals, and meticulously documented production details.}
 
 \resumeSubheading
 {Intercultural Montessori}{Chicago, Illinois}
-{Teacher’s Aid}{Apr 2019 \textbf{–} March 2020}
+{Teacher’s Aid}{Apr 2019 – Feb 2020}
 \resumeParagraph{Tutored students, facilitated programming learning, provided teacher support, and ensured effective communication and punctuality.}
+
+\resumeSubheading
+{Concession Stand Volunteer, High School Football Team}{Chicago, Illinois}
+{Fundraiser}{Sep 2016 – Jun 2017}
+\resumeParagraph{Operated the concession stand during football games to raise funds for the team. Handled cash transactions, managed inventory, and provided customer service.}
+
+\resumeSubheading
+{Private Stock Studios}{Chicago, Illinois}
+{Production Assistant}{Apr 2020 – Aug 2020}
+\resumeParagraph{Streamlined film and music production processes, orchestrated schedules with studio professionals, and meticulously documented production details.}
+
+\resumeSubheading
+{Church Events Volunteer}{Chicago, Illinois}
+{Volunteer Assistant}{Various Dates}
+\resumeParagraph{Assisted in organizing and executing community events. Responsibilities included setting up venues, managing guest registration, and ensuring smooth event operations.}
+
 \fi
 
 \resumeSubHeadingListEnd
@@ -256,88 +288,90 @@
 
 %  \resumeSubHeadingListEnd
 
-%———– AWARDS & ACHIEVEMENTS ———–
+% %———– PUBLICATIONS ———–
 
-%\section{Awards & Achievements}
-%  \vspace{2pt}
-%  \resumeSubHeadingListStart
-%    \small{\item{
-%   		\textbf{High Honors Degree:}{ Awarded to Bachelor alumni who have graduated with a GPA greater than or equal to 3.50 by Boğaziçi University.} \ \vspace{3pt}
-%
-%    }}
-%  \resumeSubHeadingListEnd\textsl{•}
+% \section{Publications}
+% \vspace{2pt}
+% \resumeSubHeadingListStart
 
-%———– PUBLICATIONS ———–
+% \resumeProjectHeading
+% {\textbf{A Retrieval-Augmented Film Recommendation System} $|$ \emph{\href{https://github.com/raulduk3/language-model-driven-film-recommendation}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/34/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 2024}}{}
+% \resumeItemListStart
+% \resumeItem{Utilized LangChain’s OpenAI integration for dynamic query generation based on user preferences, demonstrating the potential for advanced AI and machine learning techniques in digital entertainment.}
+% \resumeItem{Developed a Retrieval-Augmented Film Recommendation System using Node.js, integrating OMDb and TMDb APIs to enhance movie metadata for precise and personalized recommendations.}
+% \resumeItemListEnd
 
-\section{Publications}
+% \resumeProjectHeading
+% {\textbf{Unsupervised Deep Learning and PySceneDetect Analysis} $|$ \emph{\href{https://github.com/raulduk3/pySceneDetect-video-editing-trends}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/22/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 2023}}{}
+% \resumeItemListStart
+% \resumeItem{Analyzed short-format video editing trends using PySceneDetect and DNNs.}
+% \resumeItem{Employed t-SNE and PCA for data visualization and pattern discovery.}
+% \resumeItemListEnd
+
+% %———– Archived  ———–
+
+% \iffalse
+% \resumeProjectHeading
+% {\textbf{AI-Driven Kubrick-Inspired Film Script Generation} $|$ \emph{\href{https://github.com/raulduk3/kubrick-gen}{\color{blue}GitHub}}}{}
+% \resumeItemListStart
+% \resumeItem{Created an AI pipeline for generating film scripts inspired by Stanley Kubrick’s style.}
+% \resumeItem{Designed an API using Dust.tt for script generation with Large Language Models.}
+% \resumeItemListEnd
+
+% \resumeProjectHeading
+% {\textbf{Unsupervised Deep Learning and PySceneDetect Analysis} $|$ \emph{\href{https://github.com/raulduk3/pySceneDetect-video-editing-trends}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/22/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 2023}}{}
+% \resumeItemListStart
+% \resumeItem{Analyzed short-format video editing trends using PySceneDetect and DNNs.}
+% \resumeItem{Employed t-SNE and PCA for data visualization and pattern discovery.}
+% \resumeItemListEnd
+% \fi
+
+% \resumeSubHeadingListEnd
+
+%———– CERTIFICATES ———–
+
+\section{Certificates}
 \vspace{2pt}
 \resumeSubHeadingListStart
 
-\resumeProjectHeading
-{\textbf{A Retrieval-Augmented Film Recommendation System} $|$ \emph{\href{https://github.com/raulduk3/language-model-driven-film-recommendation}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/34/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 2024}}{}
-\resumeItemListStart
-\resumeItem{Utilized LangChain’s OpenAI integration for dynamic query generation based on user preferences, demonstrating the potential for advanced AI and machine learning techniques in digital entertainment.}
-\resumeItem{Developed a Retrieval-Augmented Film Recommendation System using Node.js, integrating OMDb and TMDb APIs to enhance movie metadata for precise and personalized recommendations.}
-\resumeItemListEnd
+\resumeCert{CompTIA ITF+}{Sep 2024}
 
-\resumeProjectHeading
-{\textbf{Unsupervised Deep Learning and PySceneDetect Analysis} $|$ \emph{\href{https://github.com/raulduk3/pySceneDetect-video-editing-trends}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/22/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 2023}}{}
-\resumeItemListStart
-\resumeItem{Analyzed short-format video editing trends using PySceneDetect and DNNs.}
-\resumeItem{Employed t-SNE and PCA for data visualization and pattern discovery.}
-\resumeItemListEnd
+\resumeCert{NYU Tandon Bridge}{Mar 2025}
 
-%———– Archived  ———–
+% \resumeCert{CompTIA A+}{Oct 2024}
 
-\iffalse
-\resumeProjectHeading
-{\textbf{AI-Driven Kubrick-Inspired Film Script Generation} $|$ \emph{\href{https://github.com/raulduk3/kubrick-gen}{\color{blue}GitHub}}}{}
-\resumeItemListStart
-\resumeItem{Created an AI pipeline for generating film scripts inspired by Stanley Kubrick’s style.}
-\resumeItem{Designed an API using Dust.tt for script generation with Large Language Models.}
-\resumeItemListEnd
+% \resumeCert{CompTIA Network+}{Nov 2024}
 
-\resumeProjectHeading
-{\textbf{Unsupervised Deep Learning and PySceneDetect Analysis} $|$ \emph{\href{https://github.com/raulduk3/pySceneDetect-video-editing-trends}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/22/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 2023}}{}
-\resumeItemListStart
-\resumeItem{Analyzed short-format video editing trends using PySceneDetect and DNNs.}
-\resumeItem{Employed t-SNE and PCA for data visualization and pattern discovery.}
-\resumeItemListEnd
-\fi
+% \resumeCert{CompTIA Security+}{Dec 2024}
+
+\resumeSubHeadingListEnd
+
+% ———– AWARDS & ACHIEVEMENTS ———–
+\section{Awards \& Achievements}
+\resumeSubHeadingListStart
+\vspace{2pt}
+
+\resumeSmallOrganizationHeading{Leadership Book Award}{Chicago, Illinois}{George Washington University}{Apr 2019}
 
 \resumeSubHeadingListEnd
 
 %———– SKILLS ———–
-
 \section{Skills}
-\vspace{2pt}
 \resumeSubHeadingListStart
 \small{\item{
-\textbf{Languages:}{ English (Native), Spanish (Intermediate)} \\ \vspace{2pt}
+\textbf{Programming}: Python, JavaScript/Node, SQL, PHP, C, C++, Rust \\ \vspace{2pt}
 
-\textbf{Programming:}{ Python, JavaScript/Node, SQL, PHP, C, C++, Rust} \\ \vspace{2pt}
+\textbf{Frameworks}: Next.js, React, Tailwind CSS, Scikit-Learn, Keras \\ \vspace{2pt}
 
-\textbf{Technologies:}{ Docker, DNNs (Deep Neural Networks), NLP (Sentiment Analysis, Topic
-Modeling), OpenCV, Linux } \\ \vspace{2pt}
+\textbf{Applications}: DaVinci Resolve, Adobe Creative Suite, Cinema4D \\ \vspace{2pt}
 
-\textbf{Frameworks:}{ Next.js, React, Tailwind, Scikit-Learn, Keras} \\ \vspace{2pt}
+\textbf{IT Support:} Setup, maintenance, troubleshooting \\ \vspace{2pt}
 
-% \textbf{Developer Tools}{: X, X, X} \\
-% \textbf{Libraries}{: X, X, X} \\
+% \textbf{Research:} Cybersecurity, AI-driven film recommendation systems, unsupervised deep learning, video analysis \\
 
-\textbf{Applications:}{ Davinci Resolve, Adobe Suite, Cinema4D } \vspace{2pt}
+\textbf{Languages:} English (Fluent), Spanish (Intermediate)
 }}
 \resumeSubHeadingListEnd
-
-%———– CERTIFICATES ———–
-
-% \section{Certificates}
-% \resumeSubHeadingListStart
-
-% \resumeOrganizationHeading
-% {Procter & Gamble VIA Certificate Program}{Feb 2022}{Business Skills, Data and Digital Skills, Project Management and Personal Productivity}
-
-% \resumeSubHeadingListEnd
 
 %———– ORGANIZATIONS ———–
 
