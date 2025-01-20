@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.8.1)  22 DEC 2024 15:51
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.8.1)  27 DEC 2024 15:30
  restricted system commands enabled.
 **Richard_Alvarez_Resume.tex
 (./Richard_Alvarez_Resume.tex
@@ -667,37 +667,32 @@ L3 programming layer <2024-02-20>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+Package rerunfilecheck Info: File `Richard_Alvarez_Resume.out' has not changed.
 
-Package rerunfilecheck Warning: File `Richard_Alvarez_Resume.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Richard_Alvarez_Resume.out':
-(rerunfilecheck)             Before: B3061AC37FF4E90BCC41CC1E266DB081;773
-(rerunfilecheck)             After:  CC493B605659D5DA790592F9AC48060A;731.
+(rerunfilecheck)             Checksum: 145A044C33E0C94E1D992D907B9F7FB4;525.
 )
 
 Here is how much of LuaTeX's memory you used:
- 16849 strings out of 476447
+ 16845 strings out of 476447
  125027,1977958 words of node,token memory allocated
  460 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 6 attribute, 58 glue_spec,
  4 attribute_list, 1 write nodes
-   avail lists: 1:2,2:1607,3:597,4:208,5:420,6:112,7:11438,8:2,9:827,10:17,11:86
-9
- 38681 multiletter control sequences out of 65536+600000
+   avail lists: 1:2,2:1593,3:546,4:174,5:444,6:119,7:11072,8:2,9:866,10:17,11:89
+3
+ 38679 multiletter control sequences out of 65536+600000
  66 fonts using 4604655 bytes
- 74i,11n,80p,848b,1120s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,11n,80p,660b,1120s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </System/Library/Fonts/Avenir.ttc></usr/local/texlive/2024/texmf-dist/fonts/open
 type/public/fontawesome5/FontAwesome5Brands-Regular-400.otf></System/Library/Fon
 ts/Avenir.ttc></usr/local/texlive/2024/texmf-dist/fonts/opentype/public/fontawes
 ome5/FontAwesome5Free-Solid-900.otf></System/Library/Fonts/Avenir.ttc></usr/loca
 l/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
 texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on Richard_Alvarez_Resume.pdf (1 page, 77744 bytes).
+Output written on Richard_Alvarez_Resume.pdf (1 page, 73742 bytes).
 
-PDF statistics: 93 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 131072)
- 57 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 83 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 131072)
+ 41 words of extra memory for PDF output out of 10000 (max. 100000000)
 
