@@ -84,8 +84,9 @@
 }
 
 \fancypagestyle{otherpages}{
-  \fancyhf{} % clear all header and footer fields
-  \fancyfoot[C]{\small Richard Álvarez | 2024}
+	\vspace{8pt}
+  	\fancyhf{} % clear all header and footer fields
+  \fancyfoot[C]{\small \\[4pt] Richard Alvarez}
 }
 
 \pagestyle{otherpages}
@@ -142,9 +143,10 @@
 
 \newcommand{\resumeCert}[2]{
 	\small{
-	\vspace{-4pt}\item
+	\item
 	\textbf{#1} {\textit{\small #2}}
 	}
+	\vspace{-4pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -177,9 +179,9 @@
 	\small
 	\hspace{.5pt} \href{mailto:rawalvarez731@gmail.com}{rawalvarez731@gmail.com} \hspace{.5pt}
 	$/$
-	 \hspace{.5pt} \href{https://github.com/raulduk3}{GitHub} \hspace{.5pt}
+	\hspace{.5pt} \href{https://www.youtube.com/@lofiricky}{YouTube} \hspace{.5pt}
 	$/$
-	\hspace{.5pt} \href{https://raulduke.com}{raulduke.com} \hspace{.5pt}
+	 \hspace{.5pt} \href{https://github.com/raulduk3}{GitHub} \hspace{.5pt}
 	$/$
 	\hspace{.5pt} \href{https://www.google.com/maps/place/Chicago,+IL/@41.833871,-87.8967704,11z/data=!3m1!4b1!4m6!3m5!1s0x880e2c3cd0f4cbed:0xafe0a6ad09c0c000!8m2!3d41.8781136!4d-87.6297982!16zL20vMDFfZDQ?entry=ttu}{Chicago, Illinois}
 \end{center}
@@ -192,7 +194,7 @@
 \vspace{2pt}
 \resumeSubHeadingListStart
 
-\resumeParagraph{I am a researcher and web developer combining experience in filmmaking, machine learning, and visual design to create engaging digital experiences and amplify meaningful stories. I have created over 17 unique open-source projects and authored two papers with over 400 cumulative downloads. I also enjoy reading, listening to music, visiting local theaters, and cycling.}
+\resumeParagraph{I am a film editor and web developer combining experience in filmmaking, computer programming, and visual design to create engaging digital experiences and amplify meaningful stories. I have created over 17 unique open-source projects and authored two papers with over 400 cumulative downloads. I also enjoy reading, listening to music, visiting local theaters, and cycling.}
 
 \vspace{2pt}
 
@@ -210,15 +212,17 @@
 {New York University (NYU) Tandon School of Engineering}{Brooklyn, New York}
 {Master of Science in Computer Engineering}{Aug 2025}{}
 {}{}
+
 \vspace{-8pt}
 
 \resumeEducationHeading
 {Kenyon College}{Gambier, Ohio}
 {Bachelor of Arts in Film; GPA: 3.4/4.0}{Aug 2020 – May 2024}
 {Minor in History and Concentration in Integrated Program in Humane Studies}{}
-\resumeParagraph{Authored two papers on machine learning applications in creative industries. Produced and edited over 15 experimental video projects, including music videos, audio-reactive visualizations, and short films.}
+\resumeParagraph{Produced and edited over 15 experimental video projects, including music videos, audio-reactive visualizations, and short films. Authored two papers on machine learning applications in creative industries.}
 
-\resumeParagraph{Relevant coursework includes AI for the Humanities (IPHS 300), Advanced Post-Production (FILM 391), Data Structures and Program Design (SCMP 218), Digital Photography (ARTS 321), Sex, Drugs, Guns: Research Strategies in the Contemporary Age (INDS 140), and Software Development (SCMP 318).}
+\resumeParagraph{Relevant coursework includes Senior Seminar in Film (FILM 480), Writing the Short Film (FILM 230), Advanced Post-Production (FILM 391), Elements & Theory of Post-Production (FILM 295), American Film Industry (FILM 191), and Digital Photography (ARTS 321).}
+
 
 %----------- Archived  -----------
 
@@ -246,17 +250,24 @@
 \vspace{2pt}
 
 \resumeSubheading
-{Assistant General Contractor}{Chicago, Illinois}
-{Sommerlad Construction · Part-time}{Jun 2023 – Aug 2023}
-\resumeParagraph{I participated in demolition projects for remodeling efforts, performed general land management tasks such as lawn mowing and simple assembly, and supported the team in meeting deadlines and adhering to safety standards.}
-
-\resumeSubheading
-{Video Editor}{Gambier, Ohio · Remote}
+{Video Editor}{Gambier, Ohio}
 {Kenyon College · Contract}{Apr 2022 – May 2022}
 \resumeParagraph{I condensed over 30 hours of interviews into a concise 10-minute recap for the John W. Adams Summer Scholars Program in Socio-Legal Studies. I crafted a polished visual presentation that adhered to Kenyon’s Visual Identity System. I highlighted key interview themes while ensuring balanced representation of all participants. I delivered the final product on schedule in an optimized format, maintaining professional collaboration with the employer throughout the project.}
 
+\vspace{2pt}
+
+\resumeSubheading
+{Research Assistant}{Chicago, Illinois}
+{University of Chicago · Part-time}{Aug 2018 - Nov 2019}
+\resumeParagraph{I worked under Bernard Dickens III on an academic paper proposing strategies to protect against supply-chain attacks and ensure file integrity using advanced checksum technologies. I attended monthly code reviews and contributed 27 commits to the repository.}
+
 %———– Archived  ———–
 \iffalse
+
+\resumeSubheading
+{Assistant General Contractor}{Chicago, Illinois}
+{Sommerlad Construction · Part-time}{Jun 2023 – Aug 2023}
+\resumeParagraph{I participated in demolition projects for remodeling efforts, performed general land management tasks such as lawn mowing and simple assembly, and supported the team in meeting deadlines and adhering to safety standards.}
 
 \resumeSubheading
 {Fontanos Subs}{Chicago, Illinois}
@@ -273,33 +284,28 @@
 {Teacher’s Aid}{Apr 2019 – Feb 2020}
 \resumeParagraph{Tutored students, facilitated programming learning, provided teacher support, and ensured effective communication and punctuality.}
 
+
 \fi
 
 \resumeSubHeadingListEnd
 
-%———– RESEARCH EXPERIENCE ———–
-
-%\section{Research Experience}
-%  \vspace{3pt}
-%  \resumeSubHeadingListStart
-
-%  \resumeSubHeadingListEnd
-
  %———– PUBLICATIONS ———–
 \section{Publications}
-\vspace{2pt}
+\vspace{4pt}
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{A Retrieval-Augmented Film Recommendation System} $|$ \emph{\href{https://github.com/raulduk3/language-model-driven-film-recommendation}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/34/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 2024}}{}
-\resumeParagraph{This project utilized LangChain’s OpenAI integration to dynamically generate queries based on user preferences, showcasing the potential of advanced AI and machine learning in digital entertainment. The Retrieval-Augmented Film Recommendation System was developed using Node.js and integrated with the OMDb and TMDb APIs to enhance movie metadata, delivering precise and personalized recommendations.}
-
-\resumeProjectHeading
-{\textbf{Unsupervised Deep Learning and PySceneDetect Analysis} $|$ \emph{\href{https://github.com/raulduk3/pySceneDetect-video-editing-trends}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/22/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 2023}}{}
+{\textbf{Unsupervised Deep Learning and PySceneDetect Analysis} $|$ \emph{\href{https://github.com/raulduk3/pySceneDetect-video-editing-trends}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/22/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 23rd 2023}}{}
+\vspace{1pt}
 \resumeParagraph{This research focused on analyzing short-format video editing trends by leveraging PySceneDetect and unsupervised deep neural networks. Advanced data visualization techniques, including t-SNE and PCA, were employed to uncover patterns and gain insights into the editing styles and trends prevalent in the dataset.}
 
 %———– Archived  ———–
 \iffalse
+
+\resumeProjectHeading
+{\textbf{A Retrieval-Augmented Film Recommendation System} $|$ \emph{\href{https://github.com/raulduk3/language-model-driven-film-recommendation}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/34/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 8th 2024}}{}
+\vspace{1pt}
+\resumeParagraph{This project utilized LangChain’s OpenAI integration to dynamically generate queries based on user preferences, showcasing the potential of advanced AI and machine learning in digital entertainment. The Retrieval-Augmented Film Recommendation System was developed using Node.js and integrated with the OMDb and TMDb APIs to enhance movie metadata, delivering precise and personalized recommendations.}
 
 \resumeProjectHeading
 {\textbf{AI-Driven Kubrick-Inspired Film Script Generation} $|$ \emph{\href{https://github.com/raulduk3/kubrick-gen}{\color{blue}GitHub}}}{}
@@ -308,21 +314,14 @@
 \resumeItem{Designed an API using Dust.tt for script generation with Large Language Models.}
 \resumeItemListEnd
 
-\resumeProjectHeading
-{\textbf{Unsupervised Deep Learning and PySceneDetect Analysis} $|$ \emph{\href{https://github.com/raulduk3/pySceneDetect-video-editing-trends}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/22/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 2023}}{}
-\resumeItemListStart
-\resumeItem{Analyzed short-format video editing trends using PySceneDetect and DNNs.}
-\resumeItem{Employed t-SNE and PCA for data visualization and pattern discovery.}
-\resumeItemListEnd
-
 \fi
 
 \resumeSubHeadingListEnd
 
 %———– CERTIFICATES ———–
-\iffalse
+
 \section{Certificates}
-\vspace{6pt}
+\vspace{4pt}
 \resumeSubHeadingListStart
 
 \resumeCert{CompTIA ITF+}{Sep 2024}
@@ -336,26 +335,122 @@
 % \resumeCert{CompTIA Security+}{Dec 2024}
 
 \resumeSubHeadingListEnd
+
+\iffalse
 \fi
 
 % ———– AWARDS & ACHIEVEMENTS ———–
-% \section{Awards \& Achievements}
-% \resumeSubHeadingListStart
-% \vspace{2pt}
+\iffalse
+\section{Awards \& Achievements}
+\resumeSubHeadingListStart
+\vspace{2pt}
 
-% \resumeSmallOrganizationHeading{Leadership Book Award}{Chicago, Illinois}{George Washington University}{Apr 2019}
+\resumeSmallOrganizationHeading{Leadership Book Award}{Chicago, Illinois}{George Washington University}{Apr 2019}
 
-% \vspace{2pt}
-
-% \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
+\fi
 
 %———– SKILLS ———–
 \section{Skills}
 \vspace{4pt}
 \resumeSubHeadingListStart
+
 \small{\item{
 
+\textbf{Video Production}: Adobe Premiere Pro, Cinema4D, DaVinci Resolve \\ \vspace{2pt}
+\textbf{Storytelling}: Scriptwriting, Script treatments, Storyboarding \\ \vspace{2pt}
+\textbf{Creative Tools}: Adobe After Effects, Blender, Audition \\ \vspace{2pt}
+\textbf{On-Set Support}: Camera operation, production assistance, and equipment management \\ \vspace{2pt}
+
 }}
+
+\resumeSubHeadingListEnd
+
+\newpage
+
+\section{Websites}
+\vspace{4pt}
+\resumeSubHeadingListStart
+
+\small{
+
+\resumeSubheading
+{Machine Television}{{\href{https://machinetelevision.com}{\color{blue}Visit Site}}}
+{Online Store}{Oct 2024}
+\resumeParagraph{Developed a functional e-commerce platform for an independent skate brand. The site was built using Next.js and Tailwind CSS for an intuitive front-end, paired with Node.js for a robust back-end infrastructure. Integrated Stripe API for seamless payment processing, optimizing user workflows across desktop and mobile. }
+
+\vspace{4pt}
+
+\resumeSubheading
+{Joaquin Morales}{\href{https://joaquinmoralesdp.com}{\color{blue}Visit Site}}{Portfolio}{Jan 2025}
+\resumeParagraph{Designed and deployed a dynamic portfolio site for a professional cinematographer. The project used Next.js for high performance, with Tailwind CSS for responsive design. Implemented a custom CMS to enable efficient content updates, managing galleries and testimonials with ease. Leveraged DigitalOcean S3 storage for scalability and fast load times for video and photo content.}
+
+\vspace{4pt}
+
+\resumeSubheading
+{GREasyVocab Flashcards}{}{Web App}{Jul 2024}
+\resumeParagraph{Created a personalized GRE vocabulary tool powered by OpenAI's APIs. The application leverages LangChain to provide personalized prompts tailored to user inputted data. Developed a secure full-stack system with user authentication and database management, ensuring a smooth and customized learning experience.}}
+
+\resumeSubHeadingListEnd
+
+
+\section{Portfolio}
+\vspace{4pt}
+\resumeSubHeadingListStart
+
+\small{
+
+\resumeSubheading
+{Editor}{2022 – Present}
+{Freelance}{}
+\resumeItemListStart
+  \resumeItem{\textit{Indie Sleaze} (2024) – Directed and produced senior thesis film, managing narrative structure and visual consistency.}
+  \resumeItem{\textit{Performing the Primitive} (2023) – Reviewed footage for Sam Pack.}
+  \resumeItem{\textit{Summer Legal Scholar Recaps} (2022) – Produced professional video content for Ric Sheffield, refining footage for clarity and engagement.}
+\resumeItemListEnd
+
+\vspace{6pt}
+
+\resumeSubheading
+{Music Video Producer}{2020 – Present}
+{Various Collaborations}{}
+\resumeItemListStart
+  \resumeItem{\textit{trees} by GRAYS (2023)}
+  \resumeItem{\textit{Live, Laugh, Kill} by JvneBvg (2022)}
+  \resumeItem{\textit{Rick and Morty} by Black Yoshi (2021)}
+  \resumeItem{\textit{Poltergeist} by 5ouley (2021) }
+  \resumeItem{\textit{No Rulez} by InVoid (2021) }
+  \resumeItem{\textit{Ghosts} by Undercurrent (2020) }
+\resumeItemListEnd
+
+\vspace{6pt}
+
+\resumeSubheading
+{Script Supervisor}{July 2024}
+{\textit{Jasmine}}{}
+\resumeParagraph{Maintained narrative and technical consistency on set.}
+
+\resumeSubheading
+{Production Assistant}{May 2024}
+{\textit{Shopping for Superman}}{}
+\resumeParagraph{Assisted on-set logistics and maintained production schedules.}
+
+}
+
+\resumeSubHeadingListEnd
+
+\section{Additional Projects}
+\vspace{4pt}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{A Retrieval-Augmented Film Recommendation System} $|$ \emph{\href{https://github.com/raulduk3/language-model-driven-film-recommendation}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/34/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 8th 2024}}{}
+\vspace{1pt}
+\resumeParagraph{This project utilized LangChain’s OpenAI integration to dynamically generate queries based on user preferences, showcasing the potential of advanced AI and machine learning in digital entertainment. The Retrieval-Augmented Film Recommendation System was developed using Node.js and integrated with the OMDb and TMDb APIs to enhance movie metadata, delivering precise and personalized recommendations.}
+
+\resumeProjectHeading {\textbf{AI-Driven Kubrick-Inspired Film Script Generation} $|$ \emph{\href{https://github.com/raulduk3/kubrick-gen}{\color{blue}GitHub}}}{} \resumeParagraph{Designed and developed an AI pipeline to generate film scripts inspired by Stanley Kubrick’s cinematic style. Leveraging Dust.tt and Large Language Models, I created a custom API to enable dynamic and stylistically consistent script generation. This project demonstrated the potential of generative AI for creative industries, producing scripts that emulated Kubrick's distinctive narrative and thematic characteristics.}
+
+\resumeProjectHeading {\textbf{Sentiment Analysis of Rotten Tomatoes Reviews} $|$ \emph{\href{https://github.com/raulduk3/rotten-tomatoes-sentiment}{\color{blue}GitHub}}}{} \resumeParagraph{Conducted a sentiment analysis of user reviews from Rotten Tomatoes to evaluate the psychology of movie consumers and the reliability of the platform's ‘freshness’ indicators. Using VADER and the NLTK library, I processed text data by filtering stop words, tokenizing reviews, and extracting sentiment scores. The analysis revealed that 73 of user reviews aligned with their assigned ‘freshness’ labels, validating both the reliability of Rotten Tomatoes user ratings and the effectiveness of the VADER sentiment analysis tool. Findings were presented in detailed visual reports, highlighting correlations between sentiment and user ratings.}
 
 \resumeSubHeadingListEnd
 
