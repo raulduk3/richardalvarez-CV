@@ -85,7 +85,8 @@
 
 \fancypagestyle{otherpages}{
   \fancyhf{} % clear all header and footer fields
-  \fancyfoot[C]{\small Richard Álvarez}
+
+  \fancyfoot[C]{\small \\[4pt] Richard Alvarez}
 }
 
 \pagestyle{otherpages}
@@ -142,9 +143,10 @@
 
 \newcommand{\resumeCert}[2]{
 	\small{
-	\vspace{-4pt}\item
+	\item
 	\textbf{#1} {\textit{\small #2}}
 	}
+	\vspace{-4pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -192,7 +194,7 @@
 \vspace{2pt}
 \resumeSubHeadingListStart
 
-\resumeParagraph{As a burgeoning computer engineer, I am passionate about pushing the boundaries of Machine Learning, Computer Vision, Robotics, GPU architecture, real-time rendering, and computational filmmaking. I focus on creating novel tools to enhance creative workflows, drawing on my experience with academic research, programming, and film/video production. I have created over 17 unique open-source projects and published two papers with over 400 cumulative downloads. I excel in producing professional video content, building software, and organizing group projects. I also enjoy reading, listening to music, visiting local theaters, and cycling.}
+\resumeParagraph{I am a researcher and web developer combining experience in filmmaking, machine learning, and visual design to create engaging digital experiences and amplify meaningful stories. I have created over 17 unique open-source projects and authored two papers with over 400 cumulative downloads. I also enjoy reading, listening to music, visiting local theaters, and cycling.}
 
 \vspace{2pt}
 
@@ -210,6 +212,7 @@
 {New York University (NYU) Tandon School of Engineering}{Brooklyn, New York}
 {Master of Science in Computer Engineering}{Aug 2025}{}
 {}{}
+
 \vspace{-8pt}
 
 \resumeEducationHeading
@@ -218,7 +221,7 @@
 {Minor in History and Concentration in Integrated Program in Humane Studies}{}
 \resumeParagraph{Authored two papers on machine learning applications in creative industries. Produced and edited over 15 experimental video projects, including music videos, audio-reactive visualizations, and short films.}
 
-\resumeParagraph{Relevant coursework includes AI for the Humanities (IPHS 300), Advanced Post-Production (FILM 391), Data Structures and Program Design (SCMP 218), Digital Photography (ARTS 321), Sex, Drugs, Guns: Research Strategies in the Contemporary Age (INDS 140), and Software Development (SCMP 318).}
+\resumeParagraph{Relevant coursework includes Senior Research Seminar (IPHS 484), AI for the Humanities (IPHS 300), Advanced Post-Production (FILM 391), Data Structures and Program Design (SCMP 218), Digital Photography (ARTS 321), Sex, Drugs, Guns: Research Strategies in the Contemporary Age (INDS 140), and Software Development (SCMP 318).}
 
 %----------- Archived  -----------
 
@@ -246,17 +249,24 @@
 \vspace{2pt}
 
 \resumeSubheading
-{Assistant General Contractor}{Chicago, Illinois}
-{Sommerlad Construction · Part-time}{Jun 2023 – Aug 2023}
-\resumeParagraph{I participated in demolition projects for remodeling efforts, performed general land management tasks such as lawn mowing and simple assembly, and supported the team in meeting deadlines and adhering to safety standards.}
-
-\resumeSubheading
-{Video Editor}{Gambier, Ohio · Remote}
+{Video Editor}{Gambier, Ohio}
 {Kenyon College · Contract}{Apr 2022 – May 2022}
 \resumeParagraph{I condensed over 30 hours of interviews into a concise 10-minute recap for the John W. Adams Summer Scholars Program in Socio-Legal Studies. I crafted a polished visual presentation that adhered to Kenyon’s Visual Identity System. I highlighted key interview themes while ensuring balanced representation of all participants. I delivered the final product on schedule in an optimized format, maintaining professional collaboration with the employer throughout the project.}
 
+\vspace{2pt}
+
+\resumeSubheading
+{Research Assistant}{Chicago, Illinois}
+{University of Chicago · Part-time}{Aug 2018 - Nov 2019}
+\resumeParagraph{I worked under Bernard Dickens III on an academic paper proposing strategies to protect against supply-chain attacks and ensure file integrity using advanced checksum technologies. I attended monthly code reviews and contributed 27 commits to the repository.}
+
 %———– Archived  ———–
 \iffalse
+
+\resumeSubheading
+{Assistant General Contractor}{Chicago, Illinois}
+{Sommerlad Construction · Part-time}{Jun 2023 – Aug 2023}
+\resumeParagraph{I participated in demolition projects for remodeling efforts, performed general land management tasks such as lawn mowing and simple assembly, and supported the team in meeting deadlines and adhering to safety standards.}
 
 \resumeSubheading
 {Fontanos Subs}{Chicago, Illinois}
@@ -273,25 +283,28 @@
 {Teacher’s Aid}{Apr 2019 – Feb 2020}
 \resumeParagraph{Tutored students, facilitated programming learning, provided teacher support, and ensured effective communication and punctuality.}
 
+
 \fi
 
 \resumeSubHeadingListEnd
 
  %———– PUBLICATIONS ———–
 \section{Publications}
-\vspace{2pt}
+\vspace{4pt}
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{A Retrieval-Augmented Film Recommendation System} $|$ \emph{\href{https://github.com/raulduk3/language-model-driven-film-recommendation}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/34/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 2024}}{}
-\resumeParagraph{This project utilized LangChain’s OpenAI integration to dynamically generate queries based on user preferences, showcasing the potential of advanced AI and machine learning in digital entertainment. The Retrieval-Augmented Film Recommendation System was developed using Node.js and integrated with the OMDb and TMDb APIs to enhance movie metadata, delivering precise and personalized recommendations.}
-
-\resumeProjectHeading
-{\textbf{Unsupervised Deep Learning and PySceneDetect Analysis} $|$ \emph{\href{https://github.com/raulduk3/pySceneDetect-video-editing-trends}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/22/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 2023}}{}
+{\textbf{Unsupervised Deep Learning and PySceneDetect Analysis} $|$ \emph{\href{https://github.com/raulduk3/pySceneDetect-video-editing-trends}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/22/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 23rd 2023}}{}
+\vspace{1pt}
 \resumeParagraph{This research focused on analyzing short-format video editing trends by leveraging PySceneDetect and unsupervised deep neural networks. Advanced data visualization techniques, including t-SNE and PCA, were employed to uncover patterns and gain insights into the editing styles and trends prevalent in the dataset.}
 
 %———– Archived  ———–
 \iffalse
+
+\resumeProjectHeading
+{\textbf{A Retrieval-Augmented Film Recommendation System} $|$ \emph{\href{https://github.com/raulduk3/language-model-driven-film-recommendation}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/34/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 8th 2024}}{}
+\vspace{1pt}
+\resumeParagraph{This project utilized LangChain’s OpenAI integration to dynamically generate queries based on user preferences, showcasing the potential of advanced AI and machine learning in digital entertainment. The Retrieval-Augmented Film Recommendation System was developed using Node.js and integrated with the OMDb and TMDb APIs to enhance movie metadata, delivering precise and personalized recommendations.}
 
 \resumeProjectHeading
 {\textbf{AI-Driven Kubrick-Inspired Film Script Generation} $|$ \emph{\href{https://github.com/raulduk3/kubrick-gen}{\color{blue}GitHub}}}{}
@@ -300,21 +313,14 @@
 \resumeItem{Designed an API using Dust.tt for script generation with Large Language Models.}
 \resumeItemListEnd
 
-\resumeProjectHeading
-{\textbf{Unsupervised Deep Learning and PySceneDetect Analysis} $|$ \emph{\href{https://github.com/raulduk3/pySceneDetect-video-editing-trends}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/22/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 2023}}{}
-\resumeItemListStart
-\resumeItem{Analyzed short-format video editing trends using PySceneDetect and DNNs.}
-\resumeItem{Employed t-SNE and PCA for data visualization and pattern discovery.}
-\resumeItemListEnd
-
 \fi
 
 \resumeSubHeadingListEnd
 
 %———– CERTIFICATES ———–
-\iffalse
+
 \section{Certificates}
-\vspace{6pt}
+\vspace{4pt}
 \resumeSubHeadingListStart
 
 \resumeCert{CompTIA ITF+}{Sep 2024}
@@ -328,6 +334,8 @@
 % \resumeCert{CompTIA Security+}{Dec 2024}
 
 \resumeSubHeadingListEnd
+
+\iffalse
 \fi
 
 % ———– AWARDS & ACHIEVEMENTS ———–
@@ -338,29 +346,148 @@
 
 \resumeSmallOrganizationHeading{Leadership Book Award}{Chicago, Illinois}{George Washington University}{Apr 2019}
 
-\vspace{2pt}
-
 \resumeSubHeadingListEnd
 \fi
 
 %———– SKILLS ———–
 \section{Skills}
+\vspace{4pt}
 \resumeSubHeadingListStart
+
 \small{\item{
-\textbf{Programming}: Python, JavaScript/TypeScript, SQL, C/C++ \\ \vspace{2pt}
 
-\textbf{Frameworks}: Next.js, React, Tailwind CSS, Scikit-Learn, Keras, pandas, NumPy \\ \vspace{2pt}
+\textbf{Programming}: Python, JavaScript/TypeScript, SQL, C++ \\  \vspace{2pt}
+\textbf{Frameworks}: Next.js, React, Tailwind CSS, scikit-learn, LangChain \\  \vspace{2pt}
+\textbf{Visualization}: After Effects, Cinema4D, Blender, Tableau, d3.js \\  \vspace{2pt}
+\textbf{Open-Source Research}: Metadata analysis, web scraping, geospatial tools (Geopandas, Mapbox) \\ \vspace{2pt}
 
-\textbf{Visualization}: Tableau, Adobe Creative Suite, Blender \\ \vspace{2pt}
 
-\textbf{Open-Source Research}: Maltego, Google Dorking, metadata analysis, reverse image search, social media monitoring \\ \vspace{2pt}
-
-\textbf{Machine Learning}: Generative AI, retrieval-augmented generation (RAG), fine-tuning LLMs  \\ \vspace{2pt}
-
-\textbf{Technical Workflows}: Agile, CI/CD, DevOps, OOP, functional programming \\ \vspace{2pt}
 }}
 
 \resumeSubHeadingListEnd
+
+\newpage
+
+\section{Websites}
+\vspace{4pt}
+\resumeSubHeadingListStart
+
+\small{
+
+\resumeSubheading
+{Machine Television}{{\href{https://machinetelevision.com}{\color{blue}Visit Site}}}
+{Online Store}{Oct 2024}
+\resumeParagraph{Developed a functional e-commerce platform for an independent skate brand. The site was built using Next.js and Tailwind CSS for an intuitive front-end, paired with Node.js for a robust back-end infrastructure. Integrated Stripe API for seamless payment processing, optimizing user workflows across desktop and mobile. }
+
+\vspace{4pt}
+
+\resumeSubheading
+{Joaquin Morales}{\href{https://joaquinmoralesdp.com}{\color{blue}Visit Site}}{Portfolio}{Jan 2025}
+\resumeParagraph{Designed and deployed a dynamic portfolio site for a professional cinematographer. The project used Next.js for high performance, with Tailwind CSS for responsive design. Implemented a custom CMS to enable efficient content updates, managing galleries and testimonials with ease. Leveraged DigitalOcean S3 storage for scalability and fast load times for video and photo content.}
+
+\vspace{4pt}
+
+\resumeSubheading
+{GREasyVocab Flashcards}{}{Web App}{Jul 2024}
+\resumeParagraph{Created a personalized GRE vocabulary tool powered by OpenAI's APIs. The application leverages LangChain to provide personalized prompts tailored to user inputted data. Developed a secure full-stack system with user authentication and database management, ensuring a smooth and customized learning experience.}}
+
+\resumeSubHeadingListEnd
+
+\section{Portfolio}
+\vspace{4pt}
+\resumeSubHeadingListStart
+
+\small{
+
+\resumeSubheading
+{Editor}{2022 – Present}
+{Freelance}{}
+\resumeItemListStart
+  \resumeItem{\textit{Indie Sleaze} (2024) – Directed and produced senior thesis film, managing narrative structure and visual consistency.}
+  \resumeItem{\textit{Performing the Primitive} (2023) – Reviewed footage for Sam Pack.}
+  \resumeItem{\textit{Summer Legal Scholar Recaps} (2022) – Produced professional video content for Ric Sheffield, refining footage for clarity and engagement.}
+\resumeItemListEnd
+
+\vspace{6pt}
+
+\resumeSubheading
+{Music Video Producer}{2020 – Present}
+{Various Collaborations}{}
+\resumeItemListStart
+  \resumeItem{\textit{trees} by GRAYS (2023)}
+  \resumeItem{\textit{Live, Laugh, Kill} by JvneBvg (2022)}
+  \resumeItem{\textit{Rick and Morty} by Black Yoshi (2021)}
+  \resumeItem{\textit{Poltergeist} by 5ouley (2021) }
+  \resumeItem{\textit{No Rulez} by InVoid (2021) }
+  \resumeItem{\textit{Ghosts} by Undercurrent (2020) }
+\resumeItemListEnd
+
+\vspace{6pt}
+
+\resumeSubheading
+{Script Supervisor}{July 2024}
+{\textit{Jasmine}}{}
+\resumeParagraph{Maintained narrative and technical consistency on set.}
+
+\resumeSubheading
+{Production Assistant}{May 2024}
+{\textit{Shopping for Superman}}{}
+\resumeParagraph{Assisted on-set logistics and maintained production schedules.}
+
+}
+
+\resumeSubHeadingListEnd
+
+\section{Additional Projects}
+\vspace{4pt}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{A Retrieval-Augmented Film Recommendation System} $|$ \emph{\href{https://github.com/raulduk3/language-model-driven-film-recommendation}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/34/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 8th 2024}}{}
+\vspace{1pt}
+\resumeParagraph{This project utilized LangChain’s OpenAI integration to dynamically generate queries based on user preferences, showcasing the potential of advanced AI and machine learning in digital entertainment. The Retrieval-Augmented Film Recommendation System was developed using Node.js and integrated with the OMDb and TMDb APIs to enhance movie metadata, delivering precise and personalized recommendations.}
+
+\resumeProjectHeading {\textbf{AI-Driven Kubrick-Inspired Film Script Generation} $|$ \emph{\href{https://github.com/raulduk3/kubrick-gen}{\color{blue}GitHub}}}{} \resumeParagraph{Designed and developed an AI pipeline to generate film scripts inspired by Stanley Kubrick’s cinematic style. Leveraging Dust.tt and Large Language Models, I created a custom API to enable dynamic and stylistically consistent script generation. This project demonstrated the potential of generative AI for creative industries, producing scripts that emulated Kubrick's distinctive narrative and thematic characteristics.}
+
+\resumeProjectHeading {\textbf{Sentiment Analysis of Rotten Tomatoes Reviews} $|$ \emph{\href{https://github.com/raulduk3/rotten-tomatoes-sentiment}{\color{blue}GitHub}}}{} \resumeParagraph{Conducted a sentiment analysis of user reviews from Rotten Tomatoes to evaluate the psychology of movie consumers and the reliability of the platform's ‘freshness’ indicators. Using VADER and the NLTK library, I processed text data by filtering stop words, tokenizing reviews, and extracting sentiment scores. The analysis revealed that 73 of user reviews aligned with their assigned ‘freshness’ labels, validating both the reliability of Rotten Tomatoes user ratings and the effectiveness of the VADER sentiment analysis tool. Findings were presented in detailed visual reports, highlighting correlations between sentiment and user ratings.}
+
+\resumeSubHeadingListEnd
+
+\newpage
+
+\section{Project Proposal}
+\vspace{4pt}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{\textbf{Mapping Migration: Open-Source Visual Investigations into Refugee Integration}}{}{Proposed Project for SITU Research}{}
+\resumeParagraph{This project explores the migration and integration patterns of refugees from Ukraine and Venezuela in Chicago, focusing on disparities in placement, access to city infrastructure, and federal enforcement actions. It leverages open-source investigation techniques to examine how refugees transition into urban systems, tracking ICE activity and identifying patterns of enforcement.}
+
+\vspace{4pt}
+
+\resumeParagraph{\textbf{Key Methods and Tools}}
+\vspace{-8pt}
+\resumeItemListStart
+\resumeItem{Web scraping public datasets (e.g., news outlets, city reports, ICE records) using Python libraries like BeautifulSoup and Scrapy, combined with natural language processing (NLP) to extract key insights from text data. This enables the rapid aggregation of information about refugee demographics, resource availability, and enforcement patterns.}
+\resumeItem{Using advanced NLP techniques with LLMs, including named entity recognition (NER) and sentiment analysis, to identify geographic locations, trends in refugee experiences, and policy themes from large datasets. For example, parsing city council minutes or deportation notices to detect disparities in resource distribution or enforcement practices.}
+\resumeItem{Building machine learning pipelines with scikit-learn for clustering refugees based on attributes such as housing access or economic integration. These models can help detect systemic patterns that would otherwise remain hidden in raw data.}
+\resumeItem{Mapping refugee placement and ICE operations with foundational geospatial tools like Mapbox or Python’s Geopandas. By overlaying these datasets, we can identify areas of concentrated enforcement activity or insufficient infrastructure, providing actionable insights.}
+\resumeItem{Developing interactive, web-based dashboards using tools like three.js or d3.js to visually represent data trends. For instance, creating timelines of enforcement events or heatmaps of refugee settlement to highlight correlations and inequities.}
+\resumeItem{Integrating metadata analysis and reverse image search techniques to verify multimedia sources, enhancing data reliability and accountability when analyzing sensitive content such as deportation footage or site-specific evidence.}
+\resumeItemListEnd
+
+\resumeParagraph{These processes provide a granular understanding of refugee placement, infrastructure access, and enforcement targeting. By connecting spatial and contextual data, the project uncovers patterns critical for advocacy, legal challenges, and policy reform—offering tools and insights beyond standard geospatial or investigative approaches.}
+
+
+
+\vspace{4pt}
+
+\resumeParagraph{\textbf{Impact:} This project aligns with SITU Research’s mission by using cutting-edge tools to amplify truth, promote equity, and address urgent human rights issues. It reflects a deep curiosity for mastering new technologies while demonstrating proficiency in integrating data science, geospatial analysis, and visual storytelling to support advocacy efforts.}
+
+\resumeSubHeadingListEnd
+
+
+\newpage
 
 %----------- REFERENCES -----------	
 \section{References}
@@ -369,19 +496,17 @@
 \vspace{2pt}
 
 \item{
-\textbf{Tina Vazquez} \\ 
-{ Fontano's Sub Sandwiches \\  
-(414) 232-1728 \\
-M - F: 9 AM to 3 PM CT 
-}
-}
-
-\item{
 \textbf{Steve Krajenski} \\ 
 { LBIS Kenyon College \\  
 \href{mailto:krajenski1@kenyon.edu}{krajenski1@kenyon.edu}} \\
 (740) 504-0328 \\
 M - F: 1 PM to 3 PM ET 
+}
+
+\item{
+\textbf{Jon Chun} \\ 
+{ Visiting Instructor at Kenyon College \\  
+\href{mailto:chunj@kenyon.edu}{chunj@kenyon.edu}} \\
 }
 
 \item{
@@ -397,9 +522,11 @@ M - F: 1 PM to 3 PM ET
 }
 
 \item{
-\textbf{Jon Chun} \\ 
-{ Visiting Instructor at Kenyon College \\  
-\href{mailto:chunj@kenyon.edu}{chunj@kenyon.edu}} \\
+\textbf{Tina Vazquez} \\ 
+{ Fontano's Sub Sandwiches \\  
+(414) 232-1728 \\
+M - F: 9 AM to 3 PM CT 
+}
 }
 
 

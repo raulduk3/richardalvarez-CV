@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.8.1)  21 JAN 2025 22:24
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.8.1)  25 JAN 2025 20:10
  restricted system commands enabled.
 **Richard_Alvarez_Resume_Refs.tex
 (./Richard_Alvarez_Resume_Refs.tex
@@ -520,32 +520,32 @@ tlig;"
 (./Richard_Alvarez_Resume_Refs.aux)
 \openout1 = Richard_Alvarez_Resume_Refs.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 170.
-LaTeX Font Info:    ... okay on input line 170.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 170.
-LaTeX Font Info:    ... okay on input line 170.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 170.
-LaTeX Font Info:    ... okay on input line 170.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 170.
-LaTeX Font Info:    ... okay on input line 170.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 170.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 172.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-70.
+72.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 170.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 170.
-LaTeX Font Info:    ... okay on input line 170.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 170.
-LaTeX Font Info:    ... okay on input line 170.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 170.
-LaTeX Font Info:    ... okay on input line 170.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 170.
-LaTeX Font Info:    ... okay on input line 170.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 170.
-LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -561,7 +561,7 @@ LaTeX Font Info:    ... okay on input line 170.
 \makeMPintoPDFobject=\count294
 \everyMPtoPDFconversion=\toks27
 )
-Package hyperref Info: Link coloring OFF on input line 170.
+Package hyperref Info: Link coloring OFF on input line 172.
  (./Richard_Alvarez_Resume_Refs.out) (./Richard_Alvarez_Resume_Refs.out)
 \@outlinefile=\write3
 
@@ -572,82 +572,82 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup5
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 170.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 170.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 170.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 170.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 170.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 170.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 170.
-LaTeX Font Info:    Redeclaring math accent \check on input line 170.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 170.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 170.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 170.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 170.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 170.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 170.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 170.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 170.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 170.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 170.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 170.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 170.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 170.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 170.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 170.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 170.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 170.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 172.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 172.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 172.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 172.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 172.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 172.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 172.
+LaTeX Font Info:    Redeclaring math accent \check on input line 172.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 172.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 172.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 172.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 172.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 170.
+(Font)              `operators' in the math version `normal' on input line 172.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Avenir(0)/m/n on input line 170.
+(Font)                  OT1/cmr/m/n --> TU/Avenir(0)/m/n on input line 172.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 170.
+(Font)              `operators' in the math version `bold' on input line 172.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Avenir(0)/m/n on input line 170.
+(Font)                  OT1/cmr/bx/n --> TU/Avenir(0)/m/n on input line 172.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/Avenir(0)/m/n --> TU/Avenir(0)/m/n on input line 170
+(Font)                  TU/Avenir(0)/m/n --> TU/Avenir(0)/m/n on input line 172
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Avenir(0)/m/it on input line 170.
+(Font)                  OT1/cmr/m/it --> TU/Avenir(0)/m/it on input line 172.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Avenir(0)/b/n on input line 170.
+(Font)                  OT1/cmr/bx/n --> TU/Avenir(0)/b/n on input line 172.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 170.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 172.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 170.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 172.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/Avenir(0)/m/n --> TU/Avenir(0)/b/n on input line 170
+(Font)                  TU/Avenir(0)/m/n --> TU/Avenir(0)/b/n on input line 172
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Avenir(0)/b/it on input line 170.
+(Font)                  OT1/cmr/bx/it --> TU/Avenir(0)/b/it on input line 172.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 170.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 172.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 170.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 172.
 
 
 LaTeX Font Warning: Font shape `TU/Avenir(0)/b/sc' undefined
-(Font)              using `TU/Avenir(0)/b/n' instead on input line 175.
+(Font)              using `TU/Avenir(0)/b/n' instead on input line 177.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 179.
+(Font)              <9> on input line 181.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 179.
+(Font)              <6> on input line 181.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 179.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 17
-9.
+(Font)              <5> on input line 181.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 18
+1.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 
 LaTeX Font Warning: Font shape `TU/Avenir(0)/m/sc' undefined
-(Font)              using `TU/Avenir(0)/m/n' instead on input line 191.
+(Font)              using `TU/Avenir(0)/m/n' instead on input line 193.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 195.
+(Font)              <7> on input line 197.
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 3.60004pt, for example:
@@ -658,10 +658,22 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 11.54704pt, for example:
-(fancyhdr)                \setlength{\footskip}{11.54704pt}.
+(fancyhdr)                Make it at least 3.60004pt, for example:
+(fancyhdr)                \setlength{\footskip}{3.60004pt}.
 
-[2] (./Richard_Alvarez_Resume_Refs.aux)
+[2]
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 3.60004pt, for example:
+(fancyhdr)                \setlength{\footskip}{3.60004pt}.
+
+[3]
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 3.60004pt, for example:
+(fancyhdr)                \setlength{\footskip}{3.60004pt}.
+
+[4] (./Richard_Alvarez_Resume_Refs.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -672,28 +684,29 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Richard_Alvarez_Resume_Refs.out' has not cha
 nged.
-(rerunfilecheck)             Checksum: 1E2FC11E778897E7188645B8DEA63DA0;564.
+(rerunfilecheck)             Checksum: D269FE9FC20D66505070C5134E1C9D34;1109.
 )
 
 Here is how much of LuaTeX's memory you used:
- 16841 strings out of 476447
- 156294,1977958 words of node,token memory allocated
+ 16854 strings out of 476447
+ 156330,1977958 words of node,token memory allocated
  460 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 6 attribute, 58 glue_spec,
  4 attribute_list, 1 write nodes
-   avail lists: 1:2,2:1644,3:594,4:205,5:566,6:135,7:16446,8:2,9:925,10:16,11:13
-21
- 38673 multiletter control sequences out of 65536+600000
- 60 fonts using 4118719 bytes
- 74i,11n,80p,876b,1120s stack positions out of 10000i,1000n,20000p,200000b,200000s
+   avail lists: 1:6,2:1831,3:605,4:202,5:464,6:126,7:13641,8:2,9:883,10:20,11:10
+13
+ 38679 multiletter control sequences out of 65536+600000
+ 60 fonts using 4118399 bytes
+ 74i,11n,80p,1059b,1120s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </System/Library/Fonts/Avenir.ttc></System/Library/Fonts/Avenir.ttc></System/Lib
 rary/Fonts/Avenir.ttc></usr/local/texlive/2024/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy9.pfb>
-Output written on Richard_Alvarez_Resume_Refs.pdf (2 pages, 76157 bytes).
+s/cm/cmsy5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy9.pfb>
+Output written on Richard_Alvarez_Resume_Refs.pdf (4 pages, 95415 bytes).
 
-PDF statistics: 85 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 131072)
- 49 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 123 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
+ 16 named destinations out of 1000 (max. 131072)
+ 89 words of extra memory for PDF output out of 10000 (max. 100000000)
 
