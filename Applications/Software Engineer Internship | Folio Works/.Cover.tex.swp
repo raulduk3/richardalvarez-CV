@@ -1,0 +1,37 @@
+\documentclass[a4paper,10pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{fontspec}
+
+\setmainfont{Avenir}
+\frenchspacing{}
+
+% Adjust the page margins
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+
+\begin{document}
+
+\begin{letter}{FuteurAI Hiring Team \\
+New York, NY}
+
+\opening{Dear FuteurAI Hiring Team,}
+
+I am excited to apply for the Frontend Developer Internship at FuteurAI. My background in web development, creative problem-solving, and collaborative team projects aligns closely with the responsibilities outlined for this role. I am eager to contribute to your mission of revolutionizing industries through innovative technology.
+
+As a Film major at Kenyon College with a concentration in Digital Humanities, I developed a strong foundation in programming and computational tools. My coursework in Data Structures, Software Development, and AI for the Humanities has prepared me to build scalable applications and tackle complex technical challenges. For example, I recently built a retrieval-augmented recommendation system using React and Node.js, integrating APIs to deliver personalized results. This project deepened my expertise with the MERN stack and reinforced my interest in creating seamless, user-friendly applications.
+
+In addition to academic projects, I have real-world experience working as a freelance web developer. I designed and deployed an e-commerce platform using React.js and Next.js, achieving a 25\% increase in user engagement for the client. My familiarity with Git version control and Agile methodologies has helped me collaborate effectively on team projects while delivering high-quality results under deadlines. I am also proficient with React Native, TailwindCSS, and state management tools like Redux, all of which are key to the position at FuteurAI.
+
+What excites me most about this role is the opportunity to contribute to both web and mobile development at a company focused on cutting-edge AI-driven solutions. Your emphasis on intuitive user experiences resonates with my approach to design and development. I am particularly interested in collaborating with cross-functional teams to build products that optimize performance and scalability across devices.
+
+I would love the opportunity to bring my skills and enthusiasm to FuteurAI. Thank you for considering my application. I look forward to discussing how my background and interests can support your team’s goals.
+
+Sincerely, \\
+Richard Alvarez \\
+(773) 469 9726 \\
+rawalvarez731@gmail.com \\
+Chicago, Illinois
+
+\end{letter}
+
+\end{document}

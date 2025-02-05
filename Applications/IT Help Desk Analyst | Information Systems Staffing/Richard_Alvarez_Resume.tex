@@ -1,0 +1,377 @@
+%-------------------------
+% Resume in Latex
+% Author : Aras Gungore
+% Edits: Richard A. Alvarez
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome5}
+\usepackage{iftex}
+\usepackage{fontspec}
+\usepackage{xspace} 
+
+\setmainfont{Avenir}
+
+\frenchspacing 
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter} 
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+
+%-------------------------
+% Custom commands
+
+\newcommand{\xsmall}{\fontsize{8pt}{8pt}\selectfont}
+\newcommand{\normal}{\fontsize{16pt}{16pt}\selectfont}
+\newcommand{\titlef}{\fontsize{21pt}{21pt}\selectfont}
+
+\newcommand{\resumeItem}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+% Footer
+\fancypagestyle{firstpage}{
+  \fancyhf{} % clear all header and footer fields
+}
+
+\fancypagestyle{otherpages}{
+  \fancyhf{} % clear all header and footer fields
+  \fancyfoot[C]{\small Richard Álvarez | 2024}
+}
+
+\pagestyle{otherpages}
+\thispagestyle{firstpage}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeEducationHeading}[6]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+		\textit{\small#5} & \textit{\small #6} \\
+	\end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & #2 \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeOrganizationHeading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & {\small #2} \\
+		\textit{\small#3}
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSmallOrganizationHeading}[4]{
+	\small{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & {\small #2} \\
+		\textit{\small#3} & \textit{\small #4} 
+	\end{tabular*}\vspace{-7pt}
+	}
+}
+
+\newcommand{\resumeCert}[2]{
+	\small{
+	\vspace{-4pt}\item
+	\textbf{#1} {\textit{\small #2}}
+	}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeParagraph}[1]{
+	\item[]
+	\parbox{\linewidth}{
+		\small{#1\xspace} % Modify this line
+	}
+	\vspace{-7pt}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+	\textbf{\titlef \scshape Richard Álvarez} \\ \vspace{3pt}
+	\vspace{8pt}
+	\small
+	\hspace{.5pt} \href{mailto:rawalvarez731@gmail.com}{rawalvarez731@gmail.com} \hspace{.5pt}
+	$/$
+	 \hspace{.5pt} \href{https://github.com/raulduk3}{GitHub} \hspace{.5pt}
+	$/$
+	\hspace{.5pt} \href{https://raulduke.com}{raulduke.com} \hspace{.5pt}
+	$/$
+	\hspace{.5pt} \href{https://www.google.com/maps/place/Chicago,+IL/@41.833871,-87.8967704,11z/data=!3m1!4b1!4m6!3m5!1s0x880e2c3cd0f4cbed:0xafe0a6ad09c0c000!8m2!3d41.8781136!4d-87.6297982!16zL20vMDFfZDQ?entry=ttu}{Chicago, Illinois}
+\end{center}
+
+%----------- ABOUT ME  -----------
+
+\vspace{-8pt}
+
+\section{About Me}
+\vspace{2pt}
+\resumeSubHeadingListStart
+
+\resumeParagraph{Aspiring IT professional skilled in troubleshooting, user training, and maintaining technology systems. Experienced in optimizing workflows and delivering high-quality customer service. Passionate about empowering communities through technology, with a strong foundation in video production, programming, and technical problem-solving.}
+
+
+\vspace{2pt}
+
+\resumeSubHeadingListEnd
+
+\vspace{-12pt}
+
+%----------- EDUCATION -----------
+
+\section{Education}
+\vspace{4pt}
+\resumeSubHeadingListStart
+
+\resumeEducationHeading
+{New York University (NYU) Tandon School of Engineering}{Brooklyn, New York}
+{Master of Science in Computer Engineering}{Aug 2025}{}
+{}{}
+\vspace{-8pt}
+
+\resumeEducationHeading
+{Kenyon College}{Gambier, Ohio}
+{Bachelor of Arts in Film; GPA: 3.4/4.0}{Aug 2020 – May 2024}
+{Minor in History and Concentration in Integrated Program in Humane Studies}{}
+\resumeParagraph{Authored two papers on machine learning applications in creative industries. Produced and edited over 15 experimental video projects, including music videos, audio-reactive visualizations, and short films.}
+
+\resumeParagraph{Relevant coursework includes AI for the Humanities (IPHS 300), Advanced Post-Production (FILM 391), Data Structures and Program Design (SCMP 218), Digital Photography (ARTS 321), Sex, Drugs, Guns: Research Strategies in the Contemporary Age (INDS 140), and Software Development (SCMP 318).}
+
+%----------- Archived  -----------
+
+\iffalse
+\resumeSubheading
+{Walter Payton College Preparatory 
+% \normalfont{(Admission rate: 0.85\%)}
+}{Chicago, Illinois}
+{High School Diploma}{Sep 2016 \textbf{--} Jun 2020}
+\fi
+
+\resumeSubHeadingListEnd
+
+%----------- WORK EXPERIENCE -----------
+
+\section{Work Experience}
+\vspace{4pt}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{LEGO STEM Instructor}{Chicago, Illinois}
+{Play-Well TEKnologies · Part-time}{Oct 2024 – Dec 2024}
+\resumeParagraph{Taught STEM-focused LEGO classes to children, introducing engineering and problem-solving concepts through hands-on activities. Managed classroom engagement, ensured safety, and adapted instruction to diverse learning styles. Communicated effectively with parents and staff to provide updates and address concerns.}
+
+\vspace{2pt}
+
+\resumeSubheading
+{IT Assistant}{Gambier, Ohio}
+{Library and Information Services (LBIS), Kenyon College · Part-time}{Sep 2023 – Feb 2024}
+\resumeParagraph{Provided technical support in a high-demand environment, troubleshooting Windows and macOS issues, configuring printers, and resolving software installation problems. Managed ServiceNow tickets, ensuring timely resolutions. Delivered remote support via remote-in tools.}
+
+
+\vspace{2pt}
+
+\resumeSubheading
+{Video Editor}{Gambier, Ohio · Remote}
+{Kenyon College · Contract}{Apr 2022 – May 2022}
+\resumeParagraph{I condensed over 30 hours of interviews into a concise 10-minute recap for the John W. Adams Summer Scholars Program in Socio-Legal Studies. I crafted a polished visual presentation that adhered to Kenyon’s Visual Identity System. I highlighted key interview themes while ensuring balanced representation of all participants. I delivered the final product on schedule in an optimized format, maintaining professional collaboration with the employer throughout the project.}
+
+\vspace{2pt}
+
+
+\resumeSubheading
+{Research Assistant}{Chicago, Illinois}
+{University of Chicago · Part-time}{Aug 2018 - Nov 2019}
+\resumeParagraph{I worked under Bernard Dickens III on an academic paper proposing strategies to protect against supply-chain attacks and ensure file integrity using advanced checksum technologies. I attended monthly code reviews and contributed 27 commits to the repository.}
+
+%———– Archived  ———–
+\iffalse
+
+\resumeSubheading
+{Fontanos Subs}{Chicago, Illinois}
+{Sub Artist · Part-time}{May 2021 – Aug 2021}
+\resumeParagraph{Worked behind the counter making sandwiches, maintaining cleanliness, and ensuring efficient service. Assisted with troubleshooting online orders, ensuring customer satisfaction and smooth operations.}
+
+\resumeSubheading
+{Private Stock Studios}{Chicago, Illinois}
+{Production Assistant}{Apr 2020 – Aug 2020}
+\resumeParagraph{Streamlined film and music production processes, orchestrated schedules with studio professionals, and meticulously documented production details.}
+
+\resumeSubheading
+{Intercultural Montessori}{Chicago, Illinois}
+{Teacher’s Aid}{Apr 2019 – Feb 2020}
+\resumeParagraph{Tutored students, facilitated programming learning, provided teacher support, and ensured effective communication and punctuality.}
+
+\fi
+
+\resumeSubHeadingListEnd
+
+%———– RESEARCH EXPERIENCE ———–
+
+%\section{Research Experience}
+%  \vspace{3pt}
+%  \resumeSubHeadingListStart
+
+%  \resumeSubHeadingListEnd
+
+%———– CERTIFICATES ———–
+% \iffalse
+\section{Certificates}
+\vspace{6pt}
+\resumeSubHeadingListStart
+
+\resumeCert{CompTIA ITF+}{Sep 2024}
+
+\resumeCert{NYU Tandon Bridge}{Mar 2025}
+
+% \resumeCert{CompTIA A+}{Oct 2024}
+
+% \resumeCert{CompTIA Network+}{Nov 2024}
+
+% \resumeCert{CompTIA Security+}{Dec 2024}
+f
+\resumeSubHeadingListEnd
+% \fi
+
+% ———– AWARDS & ACHIEVEMENTS ———–
+% \section{Awards \& Achievements}
+% \resumeSubHeadingListStart
+% \vspace{2pt}
+
+% \resumeSmallOrganizationHeading{Leadership Book Award}{Chicago, Illinois}{George Washington University}{Apr 2019}
+
+% \vspace{2pt}
+
+% \resumeSubHeadingListEnd
+
+%———– SKILLS ———–
+\section{Skills}
+\resumeSubHeadingListStart
+\small{\item{
+\textbf{Technical Support}: Windows, macOS, hardware troubleshooting, software installation, peripheral setup, remote support \\ \vspace{2pt}
+\textbf{Networking}: Basic understanding of Active Directory, DNS, VPN, network configuration \\ \vspace{2pt}
+\textbf{Cloud Services}: Office 365, Google Workspace, email administration \\ \vspace{2pt}
+\textbf{Security}: Basic endpoint security, password management, secure data handling \\ \vspace{2pt}
+\textbf{IT Operations}: Asset management, system imaging, printer maintenance \\ \vspace{2pt}
+\textbf{Development}: Python, JavaScript, C++, SQL, Bash scripting \\ \vspace{2pt}
+\textbf{Soft Skills}: Customer service, documentation, troubleshooting, teamwork \\ \vspace{2pt}
+}}
+
+\resumeSubHeadingListEnd
+
+%———– REFERENCES ———–
+% \section{References}
+% \vspace{2pt}
+% \resumeSubHeadingListStart
+% \vspace{2pt}
+% \item{
+% \textbf{Bernard Dickens III} \1
+% { Ergodark LLC \
+% \href{mailto:me@bernarddickens.com}{me@bernarddickens.com}} \ }
+
+% \item{
+% \textbf{Steve Krajenski} \
+% { LBIS Kenyon College \
+% \href{mailto:krajenski1@kenyon.edu}{krajenski1@kenyon.edu}} \
+% (740) 504-0328
+% }
+
+% \item{
+% \textbf{Audra Anderson} \
+% { BDPA Mentor \
+% \href{mailto:ajagwwtravels@gmail.com}{ajagwwtravels@gmail.com}} \
+% }
+
+% \item{
+% \textbf{Jon Chun} \
+% { Visiting Instructor at Kenyon College \
+% \href{mailto:chunj@kenyon.edu}{chunj@kenyon.edu}} \
+% }
+
+% \resumeSubHeadingListEnd
+
+%—————————————––
+\end{document}
